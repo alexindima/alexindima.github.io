@@ -1,60 +1,165 @@
-<!-- BEGIN (write your solution here) -->
+<!DOCTYPE html>
 <html>
 
 <head>
-  <title>Резюме</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Резюме</title>
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
 <body>
-  <div id="header">
+    <div id="header" class="box">
+        <div>
+            <h1>Алексин Дмитрий Александрович</h1>
+            <h2>QA engineer</h2>
+            <div>
+                <p>Образование: Высшее</p>
+                <p>Дата рождения: 20 октября 1989</p>
+                <p>Город: Краснослободск, РМ</p>
+                <p>Телефон: +7-917-695-85-85</p>
+                <p>Email: <a href="mailto:alexindima@gmail.com">alexindima@gmail.com</a></p>
+                <p>VK: <a href="https://vk.com/avenging_archangel">https://vk.com/avenging_archangel</a></p>
+                <p>Telegram: <a href="tg://resolve?domain=Avenging_Archangel">@Avenging_Archangel</a></p>
+                <p>Skype: <a href="skype:live:.cid.ba663dae717af8fe?userinfo">Dima Alexin</a></p>
+                <p>WhatsApp: <a href="whatsapp://send?phone=+79176958585">+79176958585</a></p>
+            </div>
+        </div>
+        <div>
+            <img src="images/photo.jpg" alt="Profile Photo">
+        </div>
+    </div>
+    <div id="main">
+        <div class="box">
+            <div class="title-box">
+                <h2><u>Образование</u></h2>
+            </div>
+            <div class="descripion-box">
+                <div>
+                    <h3 class="company-name">
+                        Мордовский национальный исследовательский государственный университет им. Н.П. Огарева, Саранск
+                    </h3>
+                    <h3>Инженер-радиотехник, <i>2007 - 2013</i></h3>
+                    Институт физики и химии, Радиотехника
+                </div>
+                <div>
+                    <h3 class="company-name">
+                        Государственное бюджетное профессиональное образовательное учреждение Республики Мордовия "Краснослободский промышленный техникум"
+                    </h3>
+                    <h3>Сварщик ручной дуговой сварки плавящимся покрытым электродом. Газосварщик, <i>2019</i></h3>
+                    Краснослободский промышленный техникум
+                </div>
+                <div>
+                    <h3 class="company-name">Codemasters International</h3>
+                    <h3>QA Engineer, <i>2021 - 2022</i></h3>
+                    Курс по ручному и автоматизированному тестированию
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="title-box">
+                <h2><u>Опыт работы</u></h2>
+            </div>
+            <div class="descripion-box">
+                <div>
+                    <h3 class="company-name">
+                        Краснослободский Радиозавод, Краснослободск
+                    </h3>
+                    <h3>Монтажник, <i>Июль 2008 — Сентябрь 2008</i></h3>
+                    <p>Должностные обязанности:</p>
+                    <ul>
+                        <li>Компоновка и пайка плат электронного усилителя руля для автомобилей "Лада "Приора"</li>
+                        <li>Сборка модулей управления стеклоподъемниками  для автомобилей "Лада "Приора"</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="company-name">
+                        ЗАО "Завод ПромМетИзделий", Краснослободск
+                    </h3>
+                    <h3>Главный конструктор, <i>Июнь 2011 — Март 2014</i></h3>
+                    <p>Должностные обязанности:</p>
+                    <ul>
+                        <li>Разработка 3D моделей и сопроводительной документации к конструкциям из тонколистового металла в программе SolidWorks</li>
+                        <li>Составление программ для станка ЧПУ (Euromac)</li>
+                        <li>Создание проектов ремонта оборудования и контроль выполнения</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="company-name">
+                        ООО "Актив-Электро", Краснослободск
+                    </h3>
+                    <h3>Главный конструктор, <i>Март 2014 — Май 2022</i></h3>
+                    <p>Должностные обязанности:</p>
+                    <ul>
+                        <li>Разработка 3D моделей и сопроводительной документации к конструкциям из тонколистового металла в программе SolidWorks</li>
+                        <li>Составление программ для станков ЧПУ (Durmazlar, Bodor laser) в CncKad и BodorPro</li>
+                        <li>Создание проектов ремонта оборудования и контроль выполнения</li>
+                        <li>Создание топологии и ведение локальной сети</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="company-name">
+                        Codemasters International, LLC, Саранск
+                    </h3>
+                    <h3>QA engineer, <i>Май 2022 — Настоящее время</i></h3>
+                    <p>Должностные обязанности:</p>
+                    <ul>
+                        <li>Контроль качества разрабатываемых продуктов</li>
+                        <li>Выявление и анализ ошибок и проблем</li>
+                        <li>Разработка автотестов и их регулярный прогон</li>
+                        <li>Разработка сценариев тестирования</li>
+                        <li>Документирование найденных дефектов</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="title-box">
+                <h2><u>Профессиональные навыки</u></h2>
+            </div>
+            <div class="descripion-box">
+                <ul>
+                    <li>Контроль качества разрабатываемых продуктов</li>
+                    <li>Выявление и анализ ошибок и проблем</li>
+                    <li>Разработка автотестов и их регулярный прогон</li>
+                    <li>Разработка сценариев тестирования</li>
+                    <li>Документирование найденных дефектов</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <div class="title-box">
+                <h2><u>Личные качества</u></h2>
+            </div>
+            <div class="descripion-box">
+                <ul>
+                    <li>Контроль качества разрабатываемых продуктов</li>
+                    <li>Выявление и анализ ошибок и проблем</li>
+                    <li>Разработка автотестов и их регулярный прогон</li>
+                    <li>Разработка сценариев тестирования</li>
+                    <li>Документирование найденных дефектов</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <div class="title-box">
+                <h2><u>Дополнительная информация</u></h2>
+            </div>
+            <div class="descripion-box">
+                <ul>
+                    <li>Контроль качества разрабатываемых продуктов</li>
+                    <li>Выявление и анализ ошибок и проблем</li>
+                    <li>Разработка автотестов и их регулярный прогон</li>
+                    <li>Разработка сценариев тестирования</li>
+                    <li>Документирование найденных дефектов</li>
+                </ul>
+            </div>
+        </div>
 
-    <h1 class="header-title">Дмитрий Алексин</h1>
-    <h2 class="header-title">QA engineer</h2>
-    <p>
-      <a href="mailto:alexindima@gmail.com">alexindima@gmail.com</a>, <a
-        href="https://vk.com/avenging_archangel">https://vk.com/avenging_archangel</a>
-    </p>
-  </div>
-  <div id="main">
-    <p>Я увлекаюсь радиотехникой, имею небольшой опыт программирования на C++, создавал небольшие проекты на
-      Arduino. После курсов начал работу в Codemaster International в роли QA инженера. <br><br>
-      Готов к удаленной работе.
-    <p>
-    <h2>Опыт работы</h2>
-    <h3 class="Company-name">ЗАО "Завод Промметизделий"</h3>
-    Главный конструктор, <i>июль 2011 - март 2014</i>
-    <ul>
-      <li>Создание чертежей</li>
-      <li>Создание технологических карт</li>
-      <li>Ремонт и обслуживание оборудования</li>
-    </ul>
-    <h3 class="Company-name">ООО "Актив-Электро"</h3>
-    Главный конструктор, <i>март 2014 - настроящее время</i>
-    <ul>
-      <li>Создание 3D моделей</li>
-      <li>Создание чертежей</li>
-      <li>Создание технологических карт</li>
-      <li>Ремонт и обслуживание оборудования</li>
-      <li>Администрирование локальной сети</li>
-    </ul>
-    </p>
-    <p>
-    <h2>Образование</h2>
-    <h3 class="Company-name">МГУ им. Н.П. Огарева</h3>
-    Инженер-радиотехник, <i>2007 - 2013</i>
-    <h3 class="Company-name">Codemaster International</h3>
-    Курс по ручному и автоматизированному тестированию, <i>2021 - 2022</i>
-    </p>
-  </div>
-  <div id="footer">
-    <b>Дмитрий Алексин</b><br>
-    г. Краснослободск, ул. Кирова, д. 93, кв.27.  +7-917-695-85-85. <a
-      href="mailto:alexindima@gmail.com">alexindima@gmail.com</a>
-  </div>
+
+    <div id="footer">
+        2022г.
+    </div>
 </body>
 
 </html>
-
-<!-- END -->

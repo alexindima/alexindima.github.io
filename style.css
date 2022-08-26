@@ -1,54 +1,97 @@
 body {
-  font-family: Georgia;
-  font-size: 16px;
-  margin: 0 auto;   /* center content */
-  max-width: 800px; /* limit width */
-  line-height: 1.5;
-  padding-top: 32px;
-  padding-bottom: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 0 auto; 
+    max-width: 950px;
+    line-height: 1.5;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
-/* BEGIN (write your solution here) */
-p {
-  margin-bottom: 12px;
+img {
+    margin-top: 50px;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    box-shadow: 3px 3px 15px 10px #808080;
+}
+
+
+.box {
+    justify-content: space-between;
+    display: flex;
+    margin: auto;
+    margin-bottom: 2px;
+}
+
+.title-box {
+    width: 30%;
+    background-color: #91dede;
+    margin-right: 20px;
+}
+
+.descripion-box {
+    width: 70%;
+    margin-bottom: 5px;
+}
+
+
+P {
+    line-height: 0.8em;
 }
 
 h1 {
-  font-weight: 400;
-  font-size: 36px;
-  margin-bottom: 0px;
+    align-content: center;
+    font-weight: 600;
+    font-size: 32px;
+    border-bottom: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #2d5c30;
+    margin-bottom: -20px;
 }
 
 h2 {
-  font-weight: 400;
-  font-size: 32px;
-  margin-bottom: 8px;
-  border-bottom: 1px;
-  border-bottom-style:solid;
-  border-bottom-color: grey;
+  font-weight: 600;
+  font-size: 24px;
 }
 
 h3 {
-  font-weight: 400;
-  margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 0px;
 }
 
- #header h2.header-title {
-  align-content: center;
-  font-weight: 400;
-  font-size: 18px;
-  margin-bottom: 10px;
-  border-bottom: none;
-  border-bottom-style:none;
+#header h2 {
+    align-content: center;
+    color: #3d3d3d;
+    margin-bottom: 30px;
+}
+
+.title-box h2 {
+    text-align: right;
+    font-weight: 400;
+    margin-right: 20px;
+}
+
+.company-name {
+    font-weight: 600;
+    color: #279b9f;
+    margin-bottom: -15px;
+}
+
+.descripion-box p {
+    margin-bottom: -10px;
 }
 
 #header {
-  text-align: center;
-  margin-bottom: 32px;
+    margin-bottom: 10px;
 }
 
 #footer {
   text-align: center;
   margin-top: 64px;
 }
-/* END */
+
+ul {
+    margin-bottom: 5px;
+}
