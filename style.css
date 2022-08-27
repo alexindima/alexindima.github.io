@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    margin: 0 auto; 
+    margin: 0 auto;
     max-width: 950px;
     line-height: 1.5;
     padding-top: 32px;
@@ -16,7 +16,6 @@ img {
     box-shadow: 3px 3px 15px 10px #808080;
 }
 
-
 .box {
     justify-content: space-between;
     display: flex;
@@ -26,7 +25,7 @@ img {
 
 .title-box {
     width: 30%;
-    background-color: #91dede;
+    background-color: #DAEEF3;
     margin-right: 20px;
 }
 
@@ -36,7 +35,7 @@ img {
 }
 
 
-P {
+p {
     line-height: 0.8em;
 }
 
@@ -44,15 +43,15 @@ h1 {
     align-content: center;
     font-weight: 600;
     font-size: 32px;
-    border-bottom: 3px;
+    border-bottom: 5px;
     border-bottom-style: solid;
-    border-bottom-color: #2d5c30;
+    border-bottom-color: #31849B;
     margin-bottom: -20px;
 }
 
 h2 {
-  font-weight: 600;
-  font-size: 24px;
+    font-weight: 600;
+    font-size: 24px;
 }
 
 h3 {
@@ -75,7 +74,7 @@ h3 {
 
 .company-name {
     font-weight: 600;
-    color: #279b9f;
+    color: #31849D;
     margin-bottom: -15px;
 }
 
@@ -88,8 +87,8 @@ h3 {
 }
 
 #footer {
-  text-align: center;
-  margin-top: 64px;
+    text-align: center;
+    margin-top: 32px;
 }
 
 ul {
