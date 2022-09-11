@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-
-<!--нужен lang=ru атрибут-->
-<html>
+<html lang="ru">
+<!--FIXED нужен lang=ru атрибут-->
 
 <head>
     <title>Алексин Дмитрий</title>
@@ -25,6 +24,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Алексин Дмитрий" />
     <meta property="og:description" content="QA engineer" />
     <meta property="og:image" content="images/shareImage.png" />
@@ -33,119 +33,121 @@
 </head>
 
 <body>
-<!--    id практически не должны встречаться, всегда используются классы в вёрстке за редким исключением,-->
-<!--    это связано с весами селекторов http://css.yoksel.ru/specifity/-->
-<!--    если простыми словами - следуешь БЭМ, не имеешь проблем в больших проектах, используешь только классы-->
-    <div id="header" class="box">
+    <!--FIXED    id практически не должны встречаться, всегда используются классы в вёрстке за редким исключением,-->
+    <!--    это связано с весами селекторов http://css.yoksel.ru/specifity/-->
+    <!--    если простыми словами - следуешь БЭМ, не имеешь проблем в больших проектах, используешь только классы-->
+    <header class="header box">
         <div>
-            <h1>Алексин Дмитрий Александрович</h1>
-            <h2>QA engineer</h2>
+            <h1 class="full-name">Алексин Дмитрий Александрович</h1>
+            <h2 class="position">QA engineer</h2>
             <div>
-<!--                семантически это не параграфы, это обычные div или dl dt dd -->
-<!--                параграфы бывают в статьях, здесь не вижу блога, вижу просто информацию о себе-->
-                <p>Образование: Высшее</p>
-                <p>Дата рождения: 20 октября 1989 г.</p>
-                <p>Город: Краснослободск, Республика Мордовия</p>
-                <p>Телефон: +7-917-695-85-85</p>
+                <!--FIXED           семантически это не параграфы, это обычные div или dl dt dd -->
+                <!--                параграфы бывают в статьях, здесь не вижу блога, вижу просто информацию о себе-->
+                Образование: Высшее<br>
+                Дата рождения: 20 октября 1989 г.<br>
+                Город: Краснослободск, Республика Мордовия<br>
+                Телефон: +7-917-695-85-85<br>
 
-<!--                все внешние ссылки через target=_blank, чтобы открывались в новом окне-->
-
-                <p>Email: <a href="mailto:alexindima@gmail.com">alexindima@gmail.com</a></p>
-                <p>VK: <a href="https://vk.com/avenging_archangel">Дмитрий Алексин</a></p>
-                <p>Telegram: <a href="https://t.me/Avenging_Archangel">Dmitriy Alexin</a></p>
-                <p>Skype: <a href="skype:live:.cid.ba663dae717af8fe?userinfo">Dima Alexin</a></p>
-                <p>WhatsApp: <a href="https://api.whatsapp.com/send?phone=79176958585">Dima Alexin</a></p>
-                <p>GitHub: <a href="https://github.com/alexindima">alexindima</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/dima-alexin-90b451155/">Дмитрий Алексин</a></p>
+                <!--FIXED                все внешние ссылки через target=_blank, чтобы открывались в новом окне-->
+                Email: <a href="mailto:alexindima@gmail.com" target="_blank">alexindima@gmail.com</a><br>
+                VK: <a href="https://vk.com/avenging_archangel" target="_blank">Дмитрий Алексин</a><br>
+                Telegram: <a href="https://t.me/Avenging_Archangel" target="_blank">Dmitriy Alexin</a><br>
+                Skype: <a href="skype:live:.cid.ba663dae717af8fe?userinfo" target="_blank">Dima Alexin</a><br>
+                WhatsApp: <a href="https://api.whatsapp.com/send?phone=79176958585" target="_blank">Dima Alexin</a><br>
+                GitHub: <a href="https://github.com/alexindima" target="_blank">alexindima</a><br>
+                LinkedIn: <a href="https://www.linkedin.com/in/dima-alexin-90b451155/" target="_blank">Дмитрий Алексин</a><br>
             </div>
         </div>
         <div>
-            <img src="images/photo.jpg" alt="Profile Photo">
+            <img class="avatar" src="images/photo.jpg" alt="Profile Photo">
         </div>
-    </div>
-    <div id="main">
+    </header>
+    <main>
         <div class="box">
             <div class="title-box">
-<!--                здесь ошибка с использованием <u>, потому что html служит для семантической разметки,-->
-<!--                а у тебя 100% визуальное оформление, т.е. для этого надо использовать css-->
-<!--                как например .heading {text-decoration: underline}-->
-                <h2><u>Образование</u></h2>
+                <!--FIXED           здесь ошибка с использованием <u>, потому что html служит для семантической разметки,-->
+                <!--                а у тебя 100% визуальное оформление, т.е. для этого надо использовать css-->
+                <!--                как например .heading {text-decoration: underline}-->
+                <h2 class="title-box-text">Образование</h2>
             </div>
-<!--            descripion -> description-->
-            <div class="descripion-box">
+            <!--FIXED            descripion -> description-->
+            <div class="description-box">
                 <div>
                     <h3 class="company-name">
                         Мордовский национальный исследовательский государственный университет им. Н. П. Огарева, Саранск
                     </h3>
 
-<!--                    такая же ошибка с <i> как и с <u> выше, вообще всякий раз когда что-то стилизуешь делай это в css файле без исключений-->
-                    <h3>Инженер-радиотехник, <i>2007 – 2013</i></h3>
+                    <!--FIXED                    такая же ошибка с <i> как и с <u> выше, вообще всякий раз когда что-то стилизуешь делай это в css файле без исключений-->
+                    <h3 class="profession">Инженер-радиотехник, <span class="italic">2007 – 2013</span></h3>
                     Институт физики и химии, Радиотехника
                 </div>
                 <div>
                     <h3 class="company-name">
                         Государственное бюджетное профессиональное образовательное учреждение Республики Мордовия "Краснослободский промышленный техникум"
                     </h3>
-                    <h3>Сварщик ручной дуговой сварки плавящимся покрытым электродом. Газосварщик, <i>2019</i></h3>
+                    <h3 class="profession">Сварщик ручной дуговой сварки плавящимся покрытым электродом. Газосварщик, <span class="italic">2019</span></h3>
                     Кафедра сварки
                 </div>
                 <div>
                     <h3 class="company-name">Codemasters International, Саранск</h3>
-                    <h3>QA Engineer, <i>2021 – 2022</i></h3>
+                    <h3 class="profession">QA Engineer, <span class="italic">2021 – 2022</span></h3>
                     Курсы "Основы тестирования программного обеспечения" и "Автоматизация тестирования программного обеспечения"
                 </div>
             </div>
         </div>
-
-<!--        ну для разнообразия мог сделать один из блоков через табличку, я же здесь проверяю владение html/css а не реальные резюме, причем-->
-<!--        не профильные относительно программирования строки обычно не указывают для IT-->
-        <div class="box">
-            <div class="title-box">
-                <h2><u>Опыт работы</u></h2>
-            </div>
-            <div class="descripion-box">
-                <div>
+        <!--FIXED        ну для разнообразия мог сделать один из блоков через табличку, я же здесь проверяю владение html/css а не реальные резюме, причем-->
+        <!--        не профильные относительно программирования строки обычно не указывают для IT-->
+        <table class="experience-table">
+            <tr>
+                <td class="table-title-box" rowspan="4"><h2 class="title-box-text">Опыт работы</h2></td>
+                <td class="table-description-box"> 
                     <h3 class="company-name">
                         Краснослободский Радиозавод, Краснослободск
                     </h3>
-                    <h3>Монтажник, <i>июль 2008 – сентябрь 2008</i></h3>
-                    <p>Должностные обязанности:</p>
-                    <ul>
+                    <h3 class="profession">Монтажник, <span class="italic">июль 2008 – сентябрь 2008</span></h3>
+                    <p class="profession-duty">Должностные обязанности:</p>
+                    <ul class="table-list-padding">
                         <li>Компоновка и пайка плат электронного усилителя руля для автомобилей "Лада "Приора"</li>
                         <li>Сборка модулей управления стеклоподъемниками  для автомобилей "Лада "Приора"</li>
                     </ul>
-                </div>
-                <div>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-description-box">
                     <h3 class="company-name">
                         ЗАО "Завод ПромМетИзделий", Краснослободск
                     </h3>
-                    <h3>Главный конструктор, <i>июнь 2011 – март 2014</i></h3>
-                    <p>Должностные обязанности:</p>
-                    <ul>
+                    <h3 class="profession">Главный конструктор, <span class="italic">июнь 2011 – март 2014</span></h3>
+                    <p class="profession-duty">Должностные обязанности:</p>
+                    <ul class="table-list-padding">
                         <li>Разработка 3D моделей и сопроводительной документации к конструкциям из тонколистового металла в программе SolidWorks</li>
                         <li>Составление программ для станка ЧПУ (Euromac)</li>
                         <li>Создание проектов ремонта оборудования и контроль выполнения</li>
                     </ul>
-                </div>
-                <div>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-description-box">
                     <h3 class="company-name">
                         ООО "Актив-Электро", Краснослободск
                     </h3>
-                    <h3>Главный конструктор, <i>март 2014 – май 2022</i></h3>
-                    <p>Должностные обязанности:</p>
-                    <ul>
+                    <h3 class="profession">Главный конструктор, <span class="italic">март 2014 – май 2022</span></h3>
+                    <p class="profession-duty">Должностные обязанности:</p>
+                    <ul class="table-list-padding">
                         <li>Разработка 3D моделей и сопроводительной документации к конструкциям из тонколистового металла в программе SolidWorks</li>
                         <li>Составление программ для станков ЧПУ (Durmazlar, Bodor laser) в программах CncKad и BodorPro</li>
                         <li>Создание проектов ремонта оборудования и контроль выполнения</li>
                         <li>Создание топологии и ведение локальной сети</li>
                     </ul>
-                </div>
-                <div>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-description-box">
                     <h3 class="company-name">
                         Codemasters International, Саранск
                     </h3>
-                    <h3>QA engineer, <i>май 2022 – настоящее время</i></h3>
-                    <p>Должностные обязанности:</p>
+                    <h3 class="profession">QA engineer, <span class="italic">февраль 2022 – настоящее время</span></h3>
+                    <p class="profession-duty">Должностные обязанности:</p>
                     <ul>
                         <li>Контроль качества разрабатываемых продуктов</li>
                         <li>Выявление и анализ ошибок и проблем в продукте</li>
@@ -153,15 +155,16 @@
                         <li>Разработка сценариев тестирования</li>
                         <li>Документирование найденных дефектов</li>
                     </ul>
-                </div>
-            </div>
-        </div>
+                </td>
+            </tr>
+        </table>
+
         <div class="box">
             <div class="title-box">
-                <h2><u>Профессиональные навыки</u></h2>
+                <h2 class="title-box-text">Профессиональные навыки</h2>
             </div>
-            <div class="descripion-box">
-                <ul>
+            <div class="description-box">
+                <ul class="list-padding">
                     <li>Знание цифровой и аналоговой схемотехники</li>
                     <li>Знание языков программирования</li>
                     <li>Знание систем контроля версий</li>
@@ -170,12 +173,13 @@
                 </ul>
             </div>
         </div>
+
         <div class="box">
             <div class="title-box">
-                <h2><u>Личные качества</u></h2>
+                <h2 class="title-box-text">Личные качества</h2>
             </div>
-            <div class="descripion-box">
-                <ul>
+            <div class="description-box">
+                <ul class="list-padding">
                     <li>Умение работать в команде</li>
                     <li>Владение деловой коммуникацией</li>
                     <li>Быстрая обучаемость</li>
@@ -184,11 +188,12 @@
                 </ul>
             </div>
         </div>
+
         <div class="box">
             <div class="title-box">
-                <h2><u>Дополнительная информация</u></h2>
+                <h2 class="title-box-text">Дополнительная информация</h2>
             </div>
-            <div class="descripion-box">
+            <div class="description-box">
                 <ul>
                     <li>Опытный пользователь ПК</li>
                     <li>Владение английским языком на уровне В1-В2 (Intermediate-Upper Intermediate)</li>
@@ -196,10 +201,10 @@
                 </ul>
             </div>
         </div>
-    </div>
-    <div id="footer">
+    </main>
+    <footer class="footer">
         2022 г.
-    </div>
+    </footer>
 </body>
 
 </html>
