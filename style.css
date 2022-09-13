@@ -1,13 +1,12 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    margin: 0 auto;
-    max-width: 950px;
     line-height: 1.5;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    margin: 0 auto;
+    max-width: 1000px;
+    min-width: 350px;
+    padding: 32px;
 }
-
 
 /*FIXED плохо, ты по сути вообще каждую картинку сдвинул на 50px вниз, правильно сделать .avatar класс например*/
 .avatar {
@@ -65,7 +64,6 @@ body {
 /*движок браузера будет делать много лишней работы + придётся переписывать этот код всякий раз когда на сайте*/
 /*понадобится заголовок h3, но при этом с другими стилями, это делается через .desc, .heading, .heading--primary и т.д.*/
 
-
 .full-name {
     font-weight: 600;
     font-size: 32px;
@@ -106,6 +104,7 @@ body {
 }
 
 .header {
+    width: 100%;
     margin-bottom: 10px;
 }
 
@@ -120,4 +119,56 @@ body {
 
 .table-list-padding {
     margin-bottom: -5px;
+}
+
+.about {
+    font-style: normal; 
+}
+
+@media (max-width: 700px) {
+
+    .box {
+        display: inline-block;
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    .avatar {
+        border-radius: 20%;
+    }
+
+    .title-box {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .title-box-text {
+        text-align: center;
+    }
+
+    .description-box {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .table-title-box {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .table-description-box {
+        display: block;
+        width: 100%;
+        margin-bottom: auto;
+        padding-left: 0px;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 905px) {
+    .title-box-text {
+        font-size: 18px;
+        margin-right: 10px;
+    }
 }
