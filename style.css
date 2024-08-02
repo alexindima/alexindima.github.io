@@ -15,6 +15,7 @@ body {
         "education education interests interests"
         "education education contact contact";
     grid-gap: 20px;
+    min-width: 360px;
     max-width: 1100px;
     margin: 0 auto;
     padding: 20px;
@@ -405,4 +406,68 @@ body {
     font-size: 16px;
     line-height: 150%;
     margin: 0;
+}
+
+@media (max-width: 1000px) {
+    .resume {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "header header header"
+            "languages languages tools"
+            "experience experience tools"
+            "education education interests"
+            "contact contact contact";
+    }
+}
+
+@media (max-width: 800px) {
+    .resume {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "header header"
+            "languages languages"
+            "experience experience"
+            "tools tools"
+            "education interests"
+            "contact contact";
+    }
+
+    .educations-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .resume {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "languages"
+            "tools"
+            "experience"
+            "education"
+            "interests"
+            "contact";
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .header__greeting {
+        min-height: 50px;
+    }
+
+    .header__profile-pic {
+        width: 100%;
+    }
+
+    .experience__body {
+        flex-direction: column;
+    }
+
+    .experience__details {
+        padding-left: 16px;
+    }
 }
