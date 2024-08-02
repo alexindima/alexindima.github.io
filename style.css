@@ -418,6 +418,14 @@ body {
             "education education interests"
             "contact contact contact";
     }
+
+    .experience__body {
+        flex-direction: column;
+    }
+
+    .experience__details {
+        padding-left: 16px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -462,12 +470,37 @@ body {
     .header__profile-pic {
         width: 100%;
     }
+}
 
-    .experience__body {
-        flex-direction: column;
+.ripple-effect {
+    position: relative;
+    overflow: hidden;
+}
+
+.ripple-effect--span {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+
+    animation: ripple 1s;
+    opacity: 0;
+}
+
+@keyframes ripple {
+    from {
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.1);
+        transform: scale(0);
     }
 
-    .experience__details {
-        padding-left: 16px;
+    to {
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0);
+        transform: scale(5);
     }
 }

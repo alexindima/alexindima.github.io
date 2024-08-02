@@ -4,13 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CV Aleksin Dmitrii</title>
+        <link rel="icon" href="./assets/images/icons/favicon.webp" type="image/x-icon">
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
         <div class="resume">
             <header class="header">
-                <img src="./assets/images/avatar.png" alt="Avatar" class="header__profile-pic">
-                <div class="header__text">
+                <img class="header__profile-pic" src="./assets/images/avatar.png" alt="Avatar">
+                <div class="header__text ripple-effect">
                     <span class="header__greeting">Hello 👋🏻 I’m</span>
                     <div class="header__title">
                         <h1 class="header__title--name">Dmitrii Aleksin</h1>
@@ -18,7 +19,7 @@
                     </div>
                 </div>
             </header>
-            <section class="widget widget--languages">
+            <section class="widget widget--languages ripple-effect">
                 <h2 class="widget__title">Languages</h2>
                 <div class="languages-wrapper">
                     <div class="language">
@@ -35,7 +36,7 @@
                     </div>
                 </div>
             </section>
-            <section class="widget widget--experience">
+            <section class="widget widget--experience ripple-effect">
                 <h2 class="widget__title">Experience</h2>
                 <div class="experiences-wrapper">
                     <div class="experience experience--recent">
@@ -123,7 +124,7 @@
                     </div>
                 </div>
             </section>
-            <section class="widget widget--tools">
+            <section class="widget widget--tools ripple-effect">
                 <h2 class="widget__title">Tools</h2>
                 <div class="tools-wrapper">
                     <div class="tools">
@@ -165,9 +166,16 @@
                             <img class="tools__icons--icon" src="./assets/images/icons/mongodb.png" alt="MongoDb">
                         </div>
                     </div>
+                    <div class="tools">
+                        <h3 class="tools__title">ai</h3>
+                        <div class="tools__icons">
+                            <img class="tools__icons--icon" src="./assets/images/icons/chatGPT.png" alt="ChatGPT">
+                            <img class="tools__icons--icon" src="./assets/images/icons/copilot.png" alt="Copilot">
+                        </div>
+                    </div>
                 </div>
             </section>
-            <section class="widget widget--education">
+            <section class="widget widget--education ripple-effect">
                 <h2 class="widget__title">Education</h2>
                 <div class="educations-wrapper">
                     <div class="education education--favorite">
@@ -223,7 +231,7 @@
                     </div>
                 </div>
             </section>
-            <section class="widget widget--interests">
+            <section class="widget widget--interests ripple-effect">
                 <h2 class="widget__title">Interests</h2>
                 <div class="interests">
                     <span class="interests__tag">programming</span>
@@ -250,5 +258,6 @@
                 </div>
             </footer>
         </div>
+        <script src="./assets/scripts/ripple.js"></script>
     </body>
 </html>
