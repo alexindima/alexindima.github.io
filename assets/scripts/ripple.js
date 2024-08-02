@@ -6,8 +6,7 @@ rippledElements.forEach((element) => {
         const x = event.clientX - rect.left;
         const y = event.clientY - rect.top;
 
-
-        let ripple = document.createElement("span");
+        const ripple = document.createElement("span");
         ripple.classList.add("ripple-effect--span");
         ripple.style.left = `${x}px`;
         ripple.style.top = `${y}px`;
