@@ -20,11 +20,11 @@ This is a responsive and interactive resume webpage for Dmitrii Aleksin. It allo
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/resume.git
+    git clone https://github.com/alexindima/alexindima.github.io.git
     ```
 2. Navigate to the project directory:
     ```bash
-    cd resume
+    cd alexindima.github.io
     ```
 3. Open `index.html` in your web browser.
 
