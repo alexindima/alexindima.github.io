@@ -52,7 +52,11 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const toggleResetButton = () => {
-        resetButton.style.display = hasChanges() ? "block" : "none";
+        if (hasChanges()) {
+            resetButton.classList.add("visible");
+        } else {
+            resetButton.classList.remove("visible");
+        }
     };
     toggleResetButton();
 });
