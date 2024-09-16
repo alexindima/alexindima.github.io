@@ -341,7 +341,7 @@ body {
 .tools__icons {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 8px;
     justify-content: center;
 }
 
