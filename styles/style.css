@@ -310,7 +310,7 @@ body {
     position: relative;
     gap: 8px;
     padding: 24px 16px 16px 16px;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     page-break-inside: avoid;
@@ -345,9 +345,25 @@ body {
     justify-content: center;
 }
 
-.tools__icons--icon {
-    height: 60px;
+.tools__icon {
     width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.tools__icon--image {
+    width: 60px;
+    height: 60px;
+}
+
+.tools__icon--label {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333333;
+    text-align: center;
 }
 
 .widget--education {
@@ -475,6 +491,25 @@ body {
     font-size: 16px;
     line-height: 150%;
     margin: 0;
+}
+
+.contacts__item--link {
+    color: #cecece;
+    font-size: 16px;
+    line-height: 150%;
+    margin: 0;
+}
+
+.contacts__item--link:visited {
+    color: #cecece;
+}
+
+.contacts__item--link:hover {
+    color: #fff;
+}
+
+.contacts__item--link:visited:hover {
+    color: #fff;
 }
 
 .ripple-effect {
