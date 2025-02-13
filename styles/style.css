@@ -31,11 +31,11 @@ body {
     font-family: var(--font-family), sans-serif;
     margin: 0;
     padding: 0;
-    /*background-color: var(--main-background-color);*/
+    background-color: var(--main-background-color);
 }
 
 .cv {
-    /*display: none;*/
+    display: none;
     background-color: var(--main-background-color);
     max-width: 1200px;
     margin: 0 auto;
@@ -339,7 +339,23 @@ body {
     }
 }
 
+.interests {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px 16px;
+    gap: 8px;
+}
 
+.interests__tag {
+    display: inline-block;
+    background-color: var(--header-bg-color);
+    color: var(--header-info-text-color);
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 8px 16px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
 
 
