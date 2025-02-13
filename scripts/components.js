@@ -1,6 +1,7 @@
 class CVSection extends HTMLElement {
     connectedCallback() {
         const name = this.getAttribute('name') || '';
+
         const content = this.innerHTML;
         this.innerHTML = `
             <div class="main-group">
@@ -19,7 +20,6 @@ class CVExperience extends HTMLElement {
         const technologies = this.getAttribute('technologies') || 'No technologies';
 
         const content = this.innerHTML;
-
         this.innerHTML = `
             <div class="cv-experience">
                 <div class="cv-experience__info">
@@ -41,5 +41,31 @@ class CVExperience extends HTMLElement {
     }
 }
 
+class CVEducation extends HTMLElement {
+    connectedCallback() {
+        const date = this.getAttribute('date') || 'No date';
+        const role = this.getAttribute('role') || 'No role';
+        const company = this.getAttribute('company') || 'No company';
+        const tags = this.getAttribute('tags') || 'No technologies';
+
+        this.innerHTML = `
+            <div class="cv-education">
+                <div class="cv-education__info">
+                    <span class="cv-education__date">${date}</span>
+                    <span class="cv-education__company">${company}</span>
+                </div>
+                <div class="cv-education__body">
+                    <span class="cv-education__title">${role}</span>
+                    <div class="cv-education__tags">
+                        <span class="cv-education__tags-title">Tags: </span>
+                        <span class="cv-education__tags-body">${tags}</span>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+}
+
 customElements.define('cv-section', CVSection);
 customElements.define('cv-experience', CVExperience);
+customElements.define('cv-education', CVEducation);
