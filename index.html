@@ -7,6 +7,7 @@
         <title>CV Aleksin Dmitrii</title>
         <link rel="icon" href="./assets/images/icons/favicon.webp" type="image/x-icon">
         <link rel="stylesheet" href="styles/style.css">
+        <script src="scripts/components.js" defer></script>
     </head>
     <body>
         <div class="cv">
@@ -67,6 +68,65 @@
                     </div>
                 </div>
             </header>
+            <main class="cv__main">
+                <cv-section name="EXPERIENCE">
+                    <cv-experience
+                        date="08.2023 - Present"
+                        role="Full-stack developer"
+                        company="Codemasters International LLC"
+                        technologies="Python, Selenium, Jira"
+                    >
+                        <li>Developing the frontend part of the application using Typescript and Angular</li>
+                        <li>Developing the backend part of the application using C# and .NET</li>
+                        <li>Developing Unit tests using Moq and NSubstitute</li>
+                    </cv-experience>
+                    <cv-experience
+                            date="02.2022 – 08.2023"
+                            role="QA Engineer"
+                            company="Codemasters International LLC"
+                            technologies="Python, Selenium, Jira"
+                    >
+                        <li>Quality control of the products being developed</li>
+                        <li>Identification and analysis of errors and problems in the product</li>
+                        <li>Development of autotests in Python + Selenium and their regular launch</li>
+                        <li>Development of test scenarios</li>
+                        <li>Documenting found defects</li>
+                    </cv-experience>
+                    <cv-experience
+                            date="03.2014 – 05.2022"
+                            role="Chief Designer"
+                            company="Active-Electro LLC"
+                            technologies="Python, Selenium, Jira"
+                    >
+                        <li>Development of 3D models and accompanying</li>
+                        <li>Programming for CNC machines (Durmazlar, Bodorlaser) in cncKad and BodorPro programs</li>
+                        <li>Creation of equipment repair projects and execution control</li>
+                        <li>Creating a topology and maintaining a local network</li>
+                    </cv-experience>
+                    <cv-experience
+                            date="06.2011 – 03.2014"
+                            role="Designer"
+                            company="CJSC PromMetIzdeliy Factory"
+                            technologies="Python, Selenium, Jira"
+                    >
+                        <li>Development of 3D models and accompanying documentation for sheet metal structures in the SolidWorks program</li>
+                        <li>Programming for the CNC machine (Euromac)</li>
+                        <li>Creation of equipment repair projects and execution control</li>
+                    </cv-experience>
+                    <cv-experience
+                            date="07.2008 – 09.2008"
+                            role="Installer"
+                            company="Krasnoslobodsk Radio Factory"
+                            technologies="Python, Selenium, Jira"
+                    >
+                        <li>Layout and soldering of electronic power steering boards for Lada Priora cars</li>
+                        <li>Assembly of power window control modules for Lada Priora cars</li>
+                    </cv-experience>
+                </cv-section>
+                <cv-section name="EDUCATION">
+                    <p>Bachelor's in Computer Science, XYZ University</p>
+                </cv-section>
+            </main>
         </div>
         <div class="resume">
             <header class="header">
