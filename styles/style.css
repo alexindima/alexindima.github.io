@@ -100,27 +100,27 @@ body {
     font-weight: bold;
 }
 
-.contact-info-group__items {
+.contacts {
     display: flex;
     flex-direction: column;
 
-    .contact-item {
+    .contacts__item {
         display: flex;
         align-items: center;
     }
 
-    .contact-item--title {
+    .contacts__item--title {
         min-width: 90px;
         font-weight: bold;
     }
 
-    .contact-item--link {
+    .contacts__item--link {
         font-size: 1rem;
         line-height: 150%;
         color: var(--header-info-text-color);
     }
 
-    .contact-item--link:visited, .contact-item--link:hover {
+    .contacts__item--link:visited, .contacts__item--link:hover {
         color: var(--header-info-text-color);
     }
 }
@@ -344,17 +344,17 @@ body {
     flex-wrap: wrap;
     padding: 8px 16px;
     gap: 8px;
-}
 
-.interests__tag {
-    display: inline-block;
-    background-color: var(--header-bg-color);
-    color: var(--header-info-text-color);
-    font-size: 0.9rem;
-    font-weight: bold;
-    padding: 8px 16px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    .interests__tag {
+        display: inline-block;
+        background-color: var(--header-bg-color);
+        color: var(--header-info-text-color);
+        font-size: 0.9rem;
+        font-weight: bold;
+        padding: 8px 16px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 }
 
 .certificates {
@@ -370,7 +370,7 @@ body {
         margin: 15px;
         width: 220px;
 
-        img {
+        .certificate__image {
             width: 200px;
             height: auto;
             border: 2px solid #ddd;
@@ -378,16 +378,32 @@ body {
             transition: transform 0.3s;
         }
 
-        img:hover {
+        .certificate__image:hover {
             transform: scale(1.05);
             border-color: #007bff;
+        }
+
+        .certificate__name {
+            text-align: center;
         }
     }
 }
 
+.cv__footer {
+    display: flex;
+    gap: 16px;
+    justify-content: space-around;
+    padding: 8px 16px;
+    color: var(--header-info-text-color);
+    background-color: var(--header-info-bg-color);
+}
 
-
-
+.copyright {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: end;
+}
 
 
 
