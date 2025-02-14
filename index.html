@@ -6,65 +6,48 @@
         <meta name="description" content="CV of Aleksin Dmitrii">
         <title>CV Aleksin Dmitrii</title>
         <link rel="icon" href="./assets/images/icons/favicon.webp" type="image/x-icon">
-        <link rel="stylesheet" href="styles/style.css">
-        <script src="scripts/components.js" defer></script>
+        <link rel="stylesheet" href="assets/styles/style.css">
+        <script src="assets/scripts/components.js" defer></script>
+        <script src="assets/scripts/ripple.js" defer></script>
     </head>
     <body>
         <div class="cv">
             <header class="cv__header">
-                <div class="cv__avatar">
-                    <img src="assets/images/profile/avatar.png" alt="Avatar">
+                <div class="avatar">
+                    <img class="avatar__img" src="assets/images/profile/avatar.webp" alt="Avatar">
                 </div>
                 <div class="header-info">
-                    <div class="header-info__main">
+                    <div class="header-info__main contact-info">
                         <h1 class="contact-info__name">DMITRII ALEKSIN</h1>
+                        <div class="contact-info__role">Full-stack developer</div>
                         <div class="contact-info__additional">
                             <div class="contact-info-group">
                                 <p class="contact-info-group__title">CONTACTS</p>
-                                <div class="contacts">
-                                    <p class="contacts__item"><span class="contacts__item--title">Email: </span><a class="contacts__item--link" href="mailto:alexindima@gmail.com" target="_blank">alexindima@gmail.com</a></p>
-                                    <p class="contacts__item"><span class="contacts__item--title">Telegram: </span><a class="contacts__item--link" href="https://t.me/@Avenging_Archangel" target="_blank">@Avenging_Archangel</a></p>
-                                    <p class="contacts__item"><span class="contacts__item--title">LinkedIn: </span><a class="contacts__item--link" href="https://www.linkedin.com/in/dmitrii-aleksin/" target="_blank">in/dmitrii-aleksin</a></p>
-                                    <p class="contacts__item"><span class="contacts__item--title">GitHub: </span><a class="contacts__item--link" href="https://github.com/alexindima" target="_blank">alexindima</a></p>
-                                </div>
+                                <cv-contacts></cv-contacts>
                             </div>
                             <div class="languages">
                                 <p class="languages__title">LANGUAGES</p>
                                 <div class="languages__items">
-                                    <div class="language-item">
-                                        <span class="language-name">Russian</span>
-                                        <div class="language-info">
-                                            <div class="language-dots">
-                                                <span class="dot dot--filled"></span>
-                                                <span class="dot dot--filled"></span>
-                                                <span class="dot dot--filled"></span>
-                                                <span class="dot dot--filled"></span>
-                                                <span class="dot dot--filled"></span>
-                                                <span class="dot dot--filled"></span>
-                                            </div>
-                                            <span class="language-level">C2 - Native speaker</span>
-                                        </div>
-                                    </div>
-                                    <div class="language-item">
-                                        <span class="language-name">English</span>
-                                        <div class="language-info">
-                                            <div class="language-dots">
-                                                <span class="dot dot--filled"></span>
-                                                <span class="dot dot--filled"></span>
-                                                <span class="dot dot--filled"></span>
-                                                <span class="dot dot--filled"></span>
-                                                <span class="dot dot--unfilled"></span>
-                                                <span class="dot dot--unfilled"></span>
-                                            </div>
-                                            <span class="language-level">B2 - Upper intermediate</span>
-                                        </div>
-                                    </div>
+                                    <cv-language
+                                        name="Russian"
+                                        dots="6"
+                                        filled="6"
+                                        level="C2 - Native speaker"
+                                        short-level="C2"
+                                    ></cv-language>
+                                    <cv-language
+                                        name="English"
+                                        dots="6"
+                                        filled="4"
+                                        level="B2 - Upper-Intermediate"
+                                        short-level="B2"
+                                    ></cv-language>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="header-info__role">
-                        Full-stack developer
+                    <div class="header-info__goal">
+                        🎯 Obtain an IT Specialist position where I can maximize my skills and development.
                     </div>
                 </div>
             </header>
@@ -74,7 +57,7 @@
                         date="08.2023 - Present"
                         role="Full-stack developer"
                         company="Codemasters International LLC"
-                        technologies="Python, Selenium, Jira"
+                        technologies="Angular, TypeScript, C#, .NET, Moq, NSubstitute, Jira"
                     >
                         <li>Developing the frontend part of the application using Typescript and Angular</li>
                         <li>Developing the backend part of the application using C# and .NET</li>
@@ -84,7 +67,7 @@
                         date="02.2022 – 08.2023"
                         role="QA Engineer"
                         company="Codemasters International LLC"
-                        technologies="Python, Selenium, Jira"
+                        technologies="Python, Selenium, Jira, Manual Testing, Automated Testing"
                     >
                         <li>Quality control of the products being developed</li>
                         <li>Identification and analysis of errors and problems in the product</li>
@@ -94,9 +77,9 @@
                     </cv-experience>
                     <cv-experience
                         date="03.2014 – 05.2022"
-                        role="Chief Designer"
+                        role="Chief Design Engineer"
                         company="Active-Electro LLC"
-                        technologies="Python, Selenium, Jira"
+                        technologies="SolidWorks, AutoCAD, CNC Programming (cncKad, BodorPro)"
                     >
                         <li>Development of 3D models and accompanying</li>
                         <li>Programming for CNC machines (Durmazlar, Bodorlaser) in cncKad and BodorPro programs</li>
@@ -105,9 +88,9 @@
                     </cv-experience>
                     <cv-experience
                         date="06.2011 – 03.2014"
-                        role="Designer"
+                        role="Design Engineer"
                         company="CJSC PromMetIzdeliy Factory"
-                        technologies="Python, Selenium, Jira"
+                        technologies="SolidWorks, AutoCAD, CNC Programming (Euromac)"
                     >
                         <li>Development of 3D models and accompanying documentation for sheet metal structures in the SolidWorks program</li>
                         <li>Programming for the CNC machine (Euromac)</li>
@@ -115,9 +98,9 @@
                     </cv-experience>
                     <cv-experience
                         date="07.2008 – 09.2008"
-                        role="Installer"
+                        role="PCB Assembler"
                         company="Krasnoslobodsk Radio Factory"
-                        technologies="Python, Selenium, Jira"
+                        technologies="Soldering, PCB Assembly, Electronics, Auto Electrical Systems"
                     >
                         <li>Layout and soldering of electronic power steering boards for Lada Priora cars</li>
                         <li>Assembly of power window control modules for Lada Priora cars</li>
@@ -172,344 +155,31 @@
                 </cv-section>
                 <cv-section name="CERTIFICATIONS">
                     <div class="certificates">
-                        <div class="certificate">
-                            <a href="assets/certificates/Fintech-JS-development.pdf" target="_blank">
-                                <img class="certificate__image" src="assets/certificates/Fintech-JS-development.webp" alt="Fintech: JS development">
-                            </a>
-                            <p class="certificate__name">📜 Fintech: JS development</p>
-                        </div>
-                        <div class="certificate">
-                            <a href="assets/certificates/LLM-Prompting.pdf" target="_blank">
-                                <img class="certificate__image" src="assets/certificates/LLM-Prompting.webp" alt="Improving Productivity With Advanced LLM Prompting">
-                            </a>
-                            <p class="certificate__name">📜 Improving Productivity With Advanced LLM Prompting</p>
-                        </div>
-                        <div class="certificate">
-                            <a href="assets/certificates/Practical-course-of-Frontend-development.pdf" target="_blank">
-                                <img class="certificate__image" src="assets/certificates/Practical-course-of-Frontend-development.webp" alt="Practical course of Frontend development">
-                            </a>
-                            <p class="certificate__name">📜 Practical course of Frontend development</p>
-                        </div>
+                        <cv-certificate
+                            name="Fintech: JS development"
+                            pdf="assets/certificates/Fintech-JS-development.pdf"
+                            image="assets/certificates/Fintech-JS-development.webp"
+                        ></cv-certificate>
+                        <cv-certificate
+                            name="Improving Productivity With Advanced LLM Prompting"
+                            pdf="assets/certificates/LLM-Prompting.pdf"
+                            image="assets/certificates/LLM-Prompting.webp"
+                        ></cv-certificate>
+                        <cv-certificate
+                            name="Practical course of Frontend development"
+                            pdf="assets/certificates/Practical-course-of-Frontend-development.pdf"
+                            image="assets/certificates/Practical-course-of-Frontend-development.webp"
+                        ></cv-certificate>
                     </div>
                 </cv-section>
             </main>
             <footer class="cv__footer">
-                <div class="contacts">
-                    <p class="contacts__item"><span class="contacts__item--title">Email: </span><a class="contacts__item--link" href="mailto:alexindima@gmail.com" target="_blank">alexindima@gmail.com</a></p>
-                    <p class="contacts__item"><span class="contacts__item--title">Telegram: </span><a class="contacts__item--link" href="https://t.me/@Avenging_Archangel" target="_blank">@Avenging_Archangel</a></p>
-                    <p class="contacts__item"><span class="contacts__item--title">LinkedIn: </span><a class="contacts__item--link" href="https://www.linkedin.com/in/dmitrii-aleksin/" target="_blank">in/dmitrii-aleksin</a></p>
-                    <p class="contacts__item"><span class="contacts__item--title">GitHub: </span><a class="contacts__item--link" href="https://github.com/alexindima" target="_blank">alexindima</a></p>
-                </div>
+                <cv-contacts></cv-contacts>
                 <div class="copyright">
                     <p>🚀 "Code. Learn. Improve. Never stop growing."</p>
                     <p>© 2025 Dmitrii Aleksin. All Rights Reserved.</p>
                 </div>
             </footer>
         </div>
-        <div class="resume">
-            <header class="header">
-                <img class="header__profile-pic" src="assets/images/profile/avatar.png" alt="Avatar">
-                <div class="header__text ripple-effect">
-                    <span class="header__greeting">Hello 👋🏻 I’m</span>
-                    <div class="header__title">
-                        <h1 class="header__title--name">Dmitrii Aleksin</h1>
-                        <h2 class="header__title--occupation">Full-stack developer</h2>
-                        <button id="reset-button" class="header__title--reset">Reset Changes</button>
-                        <button id="download-button" class="header__title--download">Download PDF</button>
-                    </div>
-                </div>
-            </header>
-            <section class="widget widget--languages ripple-effect">
-                <h2 class="widget__title">Languages</h2>
-                <div class="languages-wrapper">
-                    <div class="language">
-                        <span class="language__name">Russian</span>
-                        <div class="language__level">
-                            <div class="language__progress" style="width: 100%;"></div>
-                        </div>
-                    </div>
-                    <div class="language">
-                        <span class="language__name">English</span>
-                        <div class="language__level">
-                            <div class="language__progress" style="width: 75%;"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="widget widget--experience ripple-effect">
-                <h2 class="widget__title">Experience</h2>
-                <div class="experiences-wrapper">
-                    <div class="experience experience--recent">
-                        <div class="experience__header">
-                            <span class="experience__header--date">August 2023 - Present</span>
-                            <span class="experience__header--tag">most recent</span>
-                        </div>
-                        <div class="experience__body">
-                            <div class="experience__info">
-                                <h3 class="experience__info--title">Full-stack developer</h3>
-                                <span class="experience__info--company">Codemasters International LLC</span>
-                            </div>
-                            <ul class="experience__details">
-                                <li>Developing the frontend part of the application using Typescript and Angular</li>
-                                <li>Developing the backend part of the application using C# and .NET</li>
-                                <li>Developing Unit tests using Moq and Nsubstitute</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="experience">
-                        <div class="experience__header">
-                            <span class="experience__header--date">February 2022 – August 2023</span>
-                        </div>
-                        <div class="experience__body">
-                            <div class="experience__info">
-                                <h3 class="experience__info--title">QA engineer</h3>
-                                <span class="experience__info--company">Codemasters International LLC</span>
-                            </div>
-                            <ul class="experience__details">
-                                <li>Quality control of the products being developed</li>
-                                <li>Identification and analysis of errors and problems in the product</li>
-                                <li>Development of autotests in Python + Selenium and their regular launch</li>
-                                <li>Development of test scenarios</li>
-                                <li>Documenting found defects</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="experience">
-                        <div class="experience__header">
-                            <span class="experience__header--date">March 2014 – May 2022</span>
-                        </div>
-                        <div class="experience__body">
-                            <div class="experience__info">
-                                <h3 class="experience__info--title">Chief Designer</h3>
-                                <span class="experience__info--company">Active-Electro LLC</span>
-                            </div>
-                            <ul class="experience__details">
-                                <li>Development of 3D models and accompanying</li>
-                                <li>Programming for CNC machines (Durmazlar, Bodorlaser) in cncKad and BodorPro programs</li>
-                                <li>Creation of equipment repair projects and execution control</li>
-                                <li>Creating a topology and maintaining a local network</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="experience">
-                        <div class="experience__header">
-                            <span class="experience__header--date">June 2011 – March 2014</span>
-                        </div>
-                        <div class="experience__body">
-                            <div class="experience__info">
-                                <h3 class="experience__info--title">Chief Designer</h3>
-                                <span class="experience__info--company">CJSC PromMetIzdeliy Factory</span>
-                            </div>
-                            <ul class="experience__details">
-                                <li>Development of 3D models and accompanying documentation for sheet metal structures in the SolidWorks program</li>
-                                <li>Programming for the CNC machine (Euromac)</li>
-                                <li>Creation of equipment repair projects and execution control</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="experience">
-                        <div class="experience__header">
-                            <span class="experience__header--date">July 2008 – September 2008</span>
-                        </div>
-                        <div class="experience__body">
-                            <div class="experience__info">
-                                <h3 class="experience__info--title">Installer</h3>
-                                <span class="experience__info--company">Krasnoslobodsk Radio Factory</span>
-                            </div>
-                            <ul class="experience__details">
-                                <li>Layout and soldering of electronic power steering boards for Lada Priora cars</li>
-                                <li>Assembly of power window control modules for Lada Priora cars</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="widget widget--tools ripple-effect">
-                <h2 class="widget__title">Tools</h2>
-                <div class="tools-wrapper">
-                    <div class="tools">
-                        <h3 class="tools__title">language</h3>
-                        <div class="tools__icons">
-                            <div class="tools__icon">
-                                <img class="tools__icon--image" src="./assets/images/icons/js.png" title="Javascript" alt="Javascript">
-                                <span class="tools__icon--label">JavaScript</span>
-                            </div>
-                            <div class="tools__icon">
-                                <img class="tools__icon--image" src="./assets/images/icons/typescript.png" title="Typescript" alt="Typescript">
-                                <span class="tools__icon--label">TypeScript</span>
-                            </div>
-                            <div class="tools__icon">
-                                <img class="tools__icon--image" src="./assets/images/icons/c%23.png" title="C#" alt="C#">
-                                <span class="tools__icon--label">C#</span>
-                            </div>
-                            <div class="tools__icon">
-                                <img class="tools__icon--image" src="./assets/images/icons/python.webp" title="Python" alt="Python">
-                                <span class="tools__icon--label">Python</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tools">
-                        <h3 class="tools__title">framework</h3>
-                        <div class="tools__icons">
-                            <div class="tools__icon">
-                                <img class="tools__icon--image" src="./assets/images/icons/angular.png" title="Angular" alt="Angular">
-                                <span class="tools__icon--label">Angular</span>
-                            </div>
-                            <div class="tools__icon">
-                                <img class="tools__icon--image" src="./assets/images/icons/dotnet.png" title=".Net" alt=".Net">
-                                <span class="tools__icon--label">.NET</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tools">
-                        <h3 class="tools__title">code</h3>
-                        <div class="tools__icons">
-                            <div class="tools__icon">
-                                <img class="tools__icon--image" src="./assets/images/icons/webstorm.png" title="Webstorm" alt="Webstorm">
-                                <span class="tools__icon--label">WebStorm</span>
-                            </div>
-                            <div class="tools__icon">
-                                <img class="tools__icon--image" src="./assets/images/icons/rider.jpg" title="Rider" alt="Rider">
-                                <span class="tools__icon--label">Rider</span>
-                            </div>
-                            <div class="tools__icon">
-                                <img class="tools__icon--image" src="./assets/images/icons/visual-studio.png" title="Visual Studio" alt="Visual Studio">
-                                <span class="tools__icon--label">Visual Studio</span>
-                            </div>
-                            <div class="tools__icon">
-                                <img class="tools__icon--image" src="./assets/images/icons/vs-code.png" title="VS Code" alt="VS Code">
-                                <span class="tools__icon--label">VS Code</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tools">
-                        <h3 class="tools__title">design</h3>
-                        <div class="tools__icons">
-                            <div class="tools__icon">
-                                <img class="tools__icon--image" src="./assets/images/icons/figma.png" title="Figma" alt="Figma">
-                                <span class="tools__icon--label">Figma</span>
-                            </div>
-                            <div class="tools__icon">
-                                <img class="tools__icon--image" src="./assets/images/icons/drawio.png" title="DrawIo" alt="DrawIo">
-                                <span class="tools__icon--label">DrawIo</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tools">
-                        <h3 class="tools__title">database</h3>
-                        <div class="tools__icons">
-                            <div class="tools__icon">
-                                <img class="tools__icon--image" src="./assets/images/icons/sql.png" title="SQL" alt="SQL">
-                                <span class="tools__icon--label">SQL</span>
-                            </div>
-                            <div class="tools__icon">
-                                <img class="tools__icon--image" src="./assets/images/icons/mongodb.png" title="MongoDb" alt="MongoDb">
-                                <span class="tools__icon--label">MongoDB</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tools">
-                        <h3 class="tools__title">ai</h3>
-                        <div class="tools__icons">
-                            <div class="tools__icon">
-                                <img class="tools__icon--image" src="./assets/images/icons/chatGPT.png" title="ChatGPT" alt="ChatGPT">
-                                <span class="tools__icon--label">ChatGPT</span>
-                            </div>
-                            <div class="tools__icon">
-                                <img class="tools__icon--image" src="./assets/images/icons/copilot.png" title="Copilot" alt="Copilot">
-                                <span class="tools__icon--label">Copilot</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="widget widget--education ripple-effect">
-                <h2 class="widget__title">Education</h2>
-                <div class="educations-wrapper">
-                    <div class="education education--favorite">
-                        <div class="education__header">
-                            <span class="education__header--date">2023</span>
-                            <span class="education__header--favorite">❤️</span>
-                        </div>
-                        <h3 class="education__title">Frontend Developer</h3>
-                        <div class="education__tags">
-                            <span class="education__tags--tag">#Javascript</span>
-                            <span class="education__tags--tag">#Typescript</span>
-                            <span class="education__tags--tag">#Angular</span>
-                        </div>
-                        <div class="education__institution">Codemasters International LLC</div>
-                    </div>
-                    <div class="education">
-                        <div class="education__header">
-                            <span class="education__header--date">2021 - 2022</span>
-                        </div>
-                        <h3 class="education__title">Qa engineer</h3>
-                        <div class="education__tags">
-                            <span class="education__tags--tag">#manualTesting</span>
-                            <span class="education__tags--tag">#automaticTesting</span>
-                            <span class="education__tags--tag">#selenium</span>
-                            <span class="education__tags--tag">#puthon</span>
-                        </div>
-                        <div class="education__institution">Codemasters International LLC</div>
-                    </div>
-                    <div class="education">
-                        <div class="education__header">
-                            <span class="education__header--date">2016 - 2017</span>
-                        </div>
-                        <h3 class="education__title">Welder</h3>
-                        <div class="education__tags">
-                            <span class="education__tags--tag">#weldingOfMetals</span>
-                            <span class="education__tags--tag">#electricArcWelding</span>
-                            <span class="education__tags--tag">#slagWelding</span>
-                        </div>
-                        <div class="education__institution">Krasnoslobodsky vocational school</div>
-                    </div>
-                    <div class="education">
-                        <div class="education__header">
-                            <span class="education__header--date">2007 - 2013</span>
-                        </div>
-                        <h3 class="education__title">Radio Engineer</h3>
-                        <div class="education__tags">
-                            <span class="education__tags--tag">#radioEngineering</span>
-                            <span class="education__tags--tag">#radioWaves</span>
-                            <span class="education__tags--tag">#digitalCircuitry</span>
-                            <span class="education__tags--tag">#analogCircuitry</span>
-                        </div>
-                        <div class="education__institution">Mordovian State University</div>
-                    </div>
-                </div>
-            </section>
-            <section class="widget widget--interests ripple-effect">
-                <h2 class="widget__title">Interests</h2>
-                <div class="interests">
-                    <span class="interests__tag">cats</span>
-                    <span class="interests__tag">programming</span>
-                    <span class="interests__tag">reading</span>
-                    <span class="interests__tag">photography</span>
-                    <span class="interests__tag">artificial intelligence</span>
-                    <span class="interests__tag">radio technics</span>
-                    <span class="interests__tag">arduino</span>
-                    <span class="interests__tag">digital electronics</span>
-                    <span class="interests__tag">travel</span>
-                    <span class="interests__tag">education</span>
-                    <span class="interests__tag">science</span>
-                    <span class="interests__tag">video games</span>
-                    <span class="interests__tag">souls like games</span>
-                    <span class="interests__tag">music</span>
-                </div>
-            </section>
-            <footer class="footer">
-                <h2 class="footer__title">Contacts</h2>
-                <div class="contacts-wrapper">
-                    <p class="contacts__item">Email: <a class="contacts__item--link" href="mailto:alexindima@gmail.com" target="_blank">alexindima@gmail.com</a></p>
-                    <p class="contacts__item">Telegram: <a class="contacts__item--link" href="https://t.me/@Avenging_Archangel" target="_blank">@Avenging_Archangel</a></p>
-                    <p class="contacts__item">GitHub: <a class="contacts__item--link" href="https://github.com/alexindima" target="_blank">github.com/alexindima</a></p>
-                </div>
-            </footer>
-        </div>
-        <script src="./assets/scripts/external/html2pdf.bundle.min.js"></script>
-        <script src="assets/scripts/custom/ripple.js"></script>
-        <script src="assets/scripts/custom/download.js"></script>
-        <script src="assets/scripts/custom/editable.js"></script>
     </body>
 </html>
