@@ -1,6 +1,6 @@
 class CVSection extends HTMLElement {
     connectedCallback() {
-        const name = this.getAttribute('name') || '';
+        const name = this.getAttribute('name');
 
         const content = this.innerHTML;
         this.innerHTML = `
@@ -27,11 +27,11 @@ class CVContacts extends HTMLElement {
 
 class CVLanguage extends HTMLElement {
     connectedCallback() {
-        const name = this.getAttribute("name") || "Language";
-        const dots = parseInt(this.getAttribute("dots")) || 6;
-        const filled = parseInt(this.getAttribute("filled")) || 0;
-        const level = this.getAttribute("level") || "Unknown Level";
-        const shortLevel = this.getAttribute("short-level") || "Unknown Level";
+        const name = this.getAttribute("name");
+        const dots = parseInt(this.getAttribute("dots"));
+        const filled = parseInt(this.getAttribute("filled"));
+        const level = this.getAttribute("level");
+        const shortLevel = this.getAttribute("short-level");
 
         let dotHTML = "";
         for (let i = 0; i < dots; i++) {
@@ -54,24 +54,22 @@ class CVLanguage extends HTMLElement {
     }
 }
 
-
 class CVExperience extends HTMLElement {
     connectedCallback() {
-        const date = this.getAttribute('date') || 'No date';
-        const role = this.getAttribute('role') || 'No role';
-        const company = this.getAttribute('company') || 'No company';
-        const technologies = this.getAttribute('technologies') || 'No technologies';
+        const date = this.getAttribute('date');
+        const position = this.getAttribute('position');
+        const company = this.getAttribute('company');
+        const technologies = this.getAttribute('technologies');
 
         const content = this.innerHTML;
         this.innerHTML = `
             <div class="cv-experience">
                 <div class="cv-experience__info">
-                    <span class="cv-experience__title">${role}</span>
+                    <span class="cv-experience__title">${position}</span>
                     <span class="cv-experience__date">${date}</span>
                     <span class="cv-experience__company">${company}</span>
                 </div>
                 <div class="cv-experience__body">
-                
                     <ul class="cv-experience__details">
                         ${content}
                     </ul>
@@ -87,19 +85,23 @@ class CVExperience extends HTMLElement {
 
 class CVEducation extends HTMLElement {
     connectedCallback() {
-        const date = this.getAttribute('date') || 'No date';
-        const role = this.getAttribute('role') || 'No role';
-        const company = this.getAttribute('company') || 'No company';
-        const tags = this.getAttribute('tags') || 'No technologies';
+        const date = this.getAttribute('date');
+        const degree = this.getAttribute('degree');
+        const company = this.getAttribute('company');
+        const tags = this.getAttribute('tags');
 
+        const content = this.innerHTML;
         this.innerHTML = `
             <div class="cv-education">
                 <div class="cv-education__info">
+                    <span class="cv-education__title">${degree}</span>
                     <span class="cv-education__date">${date}</span>
                     <span class="cv-education__company">${company}</span>
                 </div>
                 <div class="cv-education__body">
-                    <span class="cv-education__title">${role}</span>
+                    <ul class="cv-education__details">
+                        ${content}
+                    </ul>
                     <div class="cv-education__tags">
                         <span class="cv-education__tags-title">Tags: </span>
                         <span class="cv-education__tags-body">${tags}</span>
@@ -112,9 +114,9 @@ class CVEducation extends HTMLElement {
 
 class CVCertificate extends HTMLElement {
     connectedCallback() {
-        const name = this.getAttribute("name") || "Certificate";
-        const pdf = this.getAttribute("pdf") || "#";
-        const image = this.getAttribute("image") || "assets/certificates/default.webp";
+        const name = this.getAttribute("name");
+        const pdf = this.getAttribute("pdf");
+        const image = this.getAttribute("image");
 
         this.innerHTML = `
             <div class="certificate">

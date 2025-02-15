@@ -14,7 +14,9 @@
         <div class="cv">
             <header class="cv__header">
                 <div class="avatar">
-                    <img class="avatar__img" src="assets/images/profile/avatar.webp" alt="Avatar">
+                    <a class="avatar__link" href="https://github.com/alexindima" target="_blank">
+                        <img class="avatar__img" src="assets/images/profile/avatar.webp" alt="Avatar">
+                    </a>
                 </div>
                 <div class="header-info">
                     <div class="header-info__main contact-info">
@@ -55,7 +57,7 @@
                 <cv-section name="EXPERIENCE">
                     <cv-experience
                         date="08.2023 - Present"
-                        role="Full-stack developer"
+                        position="Full-stack developer"
                         company="Codemasters International LLC"
                         technologies="Angular, TypeScript, JavaScript, C#, .NET, MongoDB, REST API, WebSockets, Moq, NSubstitute, Jira, Angular Material, Bootstrap"
                     >
@@ -73,7 +75,7 @@
                     </cv-experience>
                     <cv-experience
                         date="02.2022 – 08.2023"
-                        role="QA Engineer"
+                        position="QA Engineer"
                         company="Codemasters International LLC"
                         technologies="Python, Selenium, Unittest, Jira, Qase, Postman, JMeter, Manual Testing, Automated Testing"
                     >
@@ -90,7 +92,7 @@
                     </cv-experience>
                     <cv-experience
                         date="03.2014 – 05.2022"
-                        role="Chief Design Engineer"
+                        position="Chief Design Engineer"
                         company="Active-Electro LLC"
                         technologies="SolidWorks, AutoCAD, CNC Programming (cncKad, BodorPro)"
                     >
@@ -105,7 +107,7 @@
                     </cv-experience>
                     <cv-experience
                         date="06.2011 – 03.2014"
-                        role="Design Engineer"
+                        position="Design Engineer"
                         company="CJSC PromMetIzdeliy Factory"
                         technologies="SolidWorks, AutoCAD, CNC Programming (Euromac)"
                     >
@@ -117,7 +119,7 @@
                     </cv-experience>
                     <cv-experience
                         date="07.2008 – 09.2008"
-                        role="PCB Assembler"
+                        position="PCB Assembler"
                         company="Krasnoslobodsk Radio Factory"
                         technologies="Soldering, PCB Assembly, Electronics, Auto Electrical Systems"
                     >
@@ -132,34 +134,83 @@
                 <cv-section name="EDUCATION">
                     <cv-education
                         date="09.2024 – 12.2024"
-                        role="Fintech: JS development"
+                        degree="Fintech: JS development"
                         company="T-Bank"
-                        tags="Git, JavaScript, Typescript, Angular, NodeJS, NestJS, CI/CD"
-                    ></cv-education>
+                        tags="Git, JavaScript, TypeScript, Angular, NodeJS, NestJS, CI/CD, PostgreSQL, Prisma, GitLab CI, Heroku, Swagger, Signals, Standalone Components, Taiga UI"
+                    >
+                        <li>Focused primarily on <strong>Angular development</strong>, including <strong>Standalone Components and Signals</strong>.</li>
+                        <li>Worked with <strong>Taiga UI</strong> for UI components.</li>
+                        <li>Implemented state management using <strong>Signals</strong>.</li>
+                        <li>Developed a full-stack project: <strong>Nutrition Diary</strong>, using <strong>Angular for frontend and NestJS for backend</strong>.</li>
+                        <li>Used <strong>Prisma ORM</strong> to interact with a <strong>PostgreSQL database</strong>, implementing transactions and seeding.</li>
+                        <li>Implemented <strong>guards</strong> in NestJS to restrict access to authenticated users.</li>
+                        <li>Configured <strong>GitLab CI/CD</strong> pipelines.</li>
+                        <li>Deployed the backend on <strong>Heroku</strong>.</li>
+                        <li>Developed API documentation using <strong>Swagger</strong>.</li>
+                        <li>Created features such as <strong>adding products, tracking consumption, and viewing consumption statistics over various time periods</strong>.</li>
+                    </cv-education>
                     <cv-education
                         date="10.2022 – 12.2022"
-                        role="Frontend Developer"
+                        degree="Frontend Developer"
                         company="Codemasters International LLC"
-                        tags="JavaScript, Typescript, Angular, React"
-                    ></cv-education>
+                        tags="JavaScript, TypeScript, Angular, React, RxJS, REST API, JWT, Cookies, Angular Material"
+                    >
+                        <li>Studied <strong>SPA architecture, REST API integration, and state management</strong>.</li>
+                        <li>Worked with <strong>modular unit testing</strong> to ensure application reliability.</li>
+                        <li>Developed a <strong>news feed application in React</strong>, using <strong>useState, useEffect, useContext</strong> for state management.</li>
+                        <li>Implemented <strong>React Router</strong> for navigation and handled data fetching via <strong>fetch API</strong>.</li>
+                        <li>Designed and implemented an <strong>admin panel in Angular</strong> for managing news and users.</li>
+                        <li>Used <strong>Angular Material</strong> for UI components and <strong>RxJS Observables</strong> for reactive data handling.</li>
+                        <li>Integrated <strong>HTTP Client, interceptors, and guards</strong> for API communication.</li>
+                        <li>Implemented <strong>user role-based authentication</strong>, restricting admin panel access to authorized users.</li>
+                        <li>Initially worked with <strong>json-server</strong> for backend emulation, later migrated to <strong>PHP + Laravel backend</strong>.</li>
+                        <li>Managed authentication using <strong>JWT</strong>, later refactored to <strong>Cookies-based authentication</strong>.</li>
+                        <li>Worked independently on the project, handling both <strong>React and Angular</strong> implementations.</li>
+                    </cv-education>
                     <cv-education
                         date="09.2021 – 06.2022"
-                        role="Qa engineer"
+                        degree="QA engineer"
                         company="Codemasters International LLC"
-                        tags="Jira, Manual Testing, Automatic Testing, Python, Selenium"
-                    ></cv-education>
+                        tags="Jira, Confluence, Manual Testing, Automated Testing, Python, Selenium, Unittest, Postman, API Testing, BDD, Git"
+                    >
+                        <li>Studied <strong>smoke, functional, regression, load, UI, API, and mobile testing</strong> methodologies.</li>
+                        <li>Learned and applied <strong>STLC and SDLC processes</strong>.</li>
+                        <li>Worked with <strong>Jira</strong> for bug tracking and <strong>Confluence</strong> for documentation management.</li>
+                        <li>Developed automated <strong>end-to-end (E2E) and API tests</strong> using <strong>Python, Selenium, Unittest</strong>.</li>
+                        <li>Utilized <strong>Postman</strong> for API testing and validation.</li>
+                        <li>Covered <strong>core application functionalities</strong> with automated test cases.</li>
+                        <li>Worked on real-world simulated projects, including a <strong>TODO app and a calculator</strong>, integrating test automation.</li>
+                        <li>Implemented <strong>BDD-style automated tests</strong>.</li>
+                        <li>Collaborated with a team of students, simulating real-world IT workflows and task distribution.</li>
+                        <li>Worked with <strong>Git</strong> for version control.</li>
+                    </cv-education>
                     <cv-education
                         date="09.2016 - 06.2017"
-                        role="Welder"
+                        degree="Welder"
                         company="Krasnoslobodsky vocational school"
-                        tags="Welding of Metals, Electric Arc Welding, Slag Welding"
-                    ></cv-education>
+                        tags="Welding of Metals, Electric Arc Welding, MIG/MAG Welding, Metal Structures, Technical Drawings"
+                    >
+                        <li>Studied <strong>electric arc welding (MMA) and MIG/MAG welding techniques</strong>.</li>
+                        <li>Worked primarily with <strong>steel materials</strong>, following industrial standards.</li>
+                        <li>Developed skills in reading and interpreting <strong>technical drawings and welding documentation</strong>.</li>
+                        <li>Graduation project: <strong>Fabrication of a welded metal water tank structure</strong>, including all technical documentation.</li>
+                        <li>Gained hands-on experience with <strong>professional welding equipment</strong>.</li>
+                        <li>Received a <strong>diploma in professional welding</strong> upon graduation.</li>
+                    </cv-education>
                     <cv-education
                         date="09.2007 - 06.2013"
-                        role="Radio Engineer"
+                        degree="Radio Engineer"
                         company="Mordovian State University"
-                        tags="Radio Engineering, Radio Waves, Digital Circuitry, Analog Circuitry"
-                    ></cv-education>
+                        tags="Radio Engineering, Radio Waves, Digital Circuitry, Analog Circuitry, Signal Processing, Microcontrollers, KiCad, Matlab, Proteus, Multisim"
+                    >
+                        <li>Studied <strong>analog and digital circuit design</strong>, <strong>signal processing</strong>, and <strong>radio-electronic system development</strong>.</li>
+                        <li>Developed and tested <strong>radio transmitters and receivers</strong> in laboratory courses.</li>
+                        <li>Worked with <strong>oscilloscopes, signal generators, frequency meters</strong>, and other measurement equipment.</li>
+                        <li>Learned programming and application of <strong>PIC microcontrollers</strong>.</li>
+                        <li>Used <strong>Matlab, KiCad, Proteus, Multisim</strong> for circuit simulation and analysis.</li>
+                        <li>Diploma project: Designed and built a <strong>test system for measuring thermal hysteresis of IGBT transistors</strong> to evaluate transistor quality.</li>
+                        <li>Implemented a working prototype based on an <strong>AVR microcontroller</strong>.</li>
+                    </cv-education>
                 </cv-section>
                 <cv-section name="INTERESTS">
                     <div class="interests">
