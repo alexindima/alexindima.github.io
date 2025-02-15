@@ -83,6 +83,29 @@ class CVExperience extends HTMLElement {
     }
 }
 
+class CVPersonalProject extends HTMLElement {
+    connectedCallback() {
+        const name = this.getAttribute('name');
+        const date = this.getAttribute('date');
+        const technologies = this.getAttribute('technologies');
+
+        const content = this.innerHTML;
+        this.innerHTML = `
+            <div class="cv-personal-project">
+                <span class="cv-personal-project__title">${name}</span>
+                <span class="cv-personal-project__date">${date}</span>
+                <div class="cv-personal-project__used-technologies">
+                    <span class="cv-personal-project__used-technologies-title">Used technologies: </span>
+                    <span class="cv-personal-project__used-technologies-body">${technologies}</span>
+                </div>
+                <ul class="cv-personal-project__details">
+                    ${content}
+                </ul>
+            </div>
+        `;
+    }
+}
+
 class CVEducation extends HTMLElement {
     connectedCallback() {
         const date = this.getAttribute('date');
@@ -133,5 +156,6 @@ customElements.define('cv-section', CVSection);
 customElements.define("cv-contacts", CVContacts);
 customElements.define("cv-language", CVLanguage);
 customElements.define('cv-experience', CVExperience);
+customElements.define('cv-personal-project', CVPersonalProject);
 customElements.define('cv-education', CVEducation);
 customElements.define("cv-certificate", CVCertificate);

@@ -54,7 +54,7 @@ body {
         display: flex;
         gap: 1rem;
         justify-content: space-around;
-        padding: 0.5rem 1rem;
+        padding: 8px 16px;
         color: var(--header-info-text-color);
         background-color: var(--header-bg-color);
     }
@@ -191,7 +191,7 @@ body {
 
         .language-dots {
             display: flex;
-            gap: 5px;
+            gap: 4px;
 
             .dot {
                 width: 20px;
@@ -326,6 +326,39 @@ body {
     }
 }
 
+.cv-personal-project {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 16px;
+    gap: 8px;
+
+    .cv-personal-project__date {
+        font-weight: bold;
+    }
+
+    .cv-personal-project__title {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    .cv-personal-project__details {
+        margin: 0;
+        padding-left: 1rem;
+    }
+
+    .cv-personal-project__used-technologies {
+        font-size: 1.1rem;
+
+        .cv-personal-project__used-technologies-title {
+            font-weight: 600;
+        }
+
+        .cv-personal-project__used-technologies-body {
+            font-style: italic;
+        }
+    }
+}
+
 .cv-education {
     display: flex;
     padding: 8px 16px;
@@ -363,7 +396,7 @@ body {
 
     .cv-education__details {
         margin: 0;
-        padding-left: 1rem;
+        padding-left: 16px;
     }
 
     .cv-education__tags {
