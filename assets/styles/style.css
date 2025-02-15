@@ -22,7 +22,7 @@ html {
     font-family: var(--font-family), sans-serif;
     font-size: 16px;
 
-    h1, p, a, body {
+    body, h1, p, a, ul {
         margin: 0;
         padding: 0;
     }
@@ -271,6 +271,10 @@ body {
         background-color: var(--secondary-background-color);
     }
 
+}
+
+.tech-stack {
+    padding: 0 32px;
 }
 
 .cv-experience {
