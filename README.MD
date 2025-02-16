@@ -1,22 +1,21 @@
 # CV of Dmitrii Aleksin
 
-This is a responsive and interactive resume webpage for Dmitrii Aleksin. It allows users to edit content directly on the page and download the resume as a PDF. Additionally, it features material wave effects for interaction.
+This is a responsive and interactive resume webpage for Dmitrii Aleksin. It provides a structured and professional presentation of experience, skills, and projects with interactive features.
 
 ## Features
 
-- **Editable Content**: Users can click on text elements to edit them. Changes are saved in the browser's local storage.
-- **Download as PDF**: A button allows the user to download the resume as a PDF file.
-- **Material Wave Effect**: Interactive elements have a ripple effect when clicked.
-- **Responsive Design**: The layout adapts to different screen sizes.
+- **Structured CV Layout**: Organized sections including experience, projects, education, and certifications.
+- **Custom Web Components**: Uses modern Web Components for modular and reusable code.
+- **Material Wave Effect**: Implements a ripple effect for interactive elements.
+- **Responsive Design**: The layout adapts to different screen sizes for optimal viewing on desktop and mobile.
 
 ## Technologies Used
 
 - HTML
 - CSS
-- JavaScript
-- [html2pdf.js](https://github.com/eKoopmans/html2pdf.js) for PDF generation
+- JavaScript (Web Components and ripple effect)
 
-## Installation
+## Installation & Setup
 
 1. Clone the repository:
     ```bash
@@ -26,23 +25,29 @@ This is a responsive and interactive resume webpage for Dmitrii Aleksin. It allo
     ```bash
     cd alexindima.github.io
     ```
-3. Open `index.html` in your web browser.
+3. Open `index.html` in your web browser or use a local server:
+    ```bash
+    npx http-server
+    ```
 
 ## Usage
 
-- **Editing Content**: Click on any text element to edit it. Changes are saved automatically.
-- **Resetting Changes**: Click the "Reset Changes" button to clear all saved changes and reload the default content.
-- **Downloading PDF**: Click the "Download PDF" button to download the current version of the resume as a PDF.
+- **View CV**: Open `index.html` in a browser to view the CV.
+- **Contact Information**: Easily access contact details via the provided links.
 
 ## Project Structure
 
-- `index.html`: The main HTML file.
-- `styles/`: The CSS files for styling the resume.
-- `assets/`: Directory containing assets.
+- `index.html` - Main HTML structure.
+- `assets/styles/` - CSS styles for UI design and responsiveness.
+- `assets/scripts/` - JavaScript files for custom components and interactive features.
+- `assets/images/` - Profile images and icons.
+- `assets/certificates/` - Digital certificates for achievements.
 
 ## Contact
 
 For any inquiries, please contact me at:
 - **Email**: [alexindima@gmail.com](mailto:alexindima@gmail.com)
 - **Telegram**: [@Avenging_Archangel](https://t.me/@Avenging_Archangel)
+- **LinkedIn**: [in/dmitrii-aleksin](https://www.linkedin.com/in/dmitrii-aleksin/)
 - **GitHub**: [github.com/alexindima](https://github.com/alexindima)
+

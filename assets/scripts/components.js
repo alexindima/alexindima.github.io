@@ -140,11 +140,13 @@ class CVCertificate extends HTMLElement {
         const name = this.getAttribute("name");
         const pdf = this.getAttribute("pdf");
         const image = this.getAttribute("image");
+        const imageHeight = this.getAttribute("image-height");
+        const imageWidth = this.getAttribute("image-width");
 
         this.innerHTML = `
             <div class="certificate">
                 <a href="${pdf}" target="_blank">
-                    <img class="certificate__image" src="${image}" alt="${name}">
+                    <img class="certificate__image" src="${image}" alt="${name}" style="aspect-ratio: ${imageHeight} / ${imageWidth}">
                 </a>
                 <p class="certificate__name">📜 ${name}</p>
             </div>

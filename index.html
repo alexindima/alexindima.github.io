@@ -15,7 +15,11 @@
             <header class="cv__header">
                 <div class="avatar">
                     <a class="avatar__link" href="https://github.com/alexindima" target="_blank">
-                        <img class="avatar__img" src="assets/images/profile/avatar.webp" alt="Avatar">
+                        <picture>
+                            <source media="(max-width: 1944px)" srcset="assets/images/avatar_500x500.webp" type="image/webp">
+                            <source media="(max-width: 768px)" srcset="assets/images/avatar_768x768.webp" type="image/jpeg">
+                            <img class="avatar__img" src="assets/images/avatar.webp" alt="Avatar">
+                        </picture>
                     </a>
                 </div>
                 <div class="header-info">
@@ -57,7 +61,7 @@
                 <cv-section name="TECH STACK">
                     <ul class="tech-stack">
                         <li><strong>Frontend:</strong> Angular, TypeScript, JavaScript, RxJS, Angular Material, Bootstrap, Taiga UI, PWA, WebSockets</li>
-                        <li><strong>Backend:</strong> NestJS, C#, .NET, Node.js, SignalR, Rabbit MQ</li>
+                        <li><strong>Backend:</strong> C#, .NET, SignalR, Rabbit MQ, NestJS, Node.js</li>
                         <li><strong>Databases:</strong> MongoDB, Redis, PostgresSQL, Prisma ORM</li>
                         <li><strong>Testing:</strong> Jest, Moq, NSubstitute, Selenium, Unittest, Postman, JMeter</li>
                         <li><strong>DevOps & CI/CD:</strong> GitHub Actions, GitLab CI, Docker, Heroku</li>
@@ -75,12 +79,12 @@
                         <li>Developed and optimized core parts of the <strong>site editor, widget rendering engine</strong>, and scripting functionality using both <strong>Angular and pure TypeScript</strong>.</li>
                         <li>Implemented UI components using <strong>Angular Material</strong> and <strong>Bootstrap</strong>, ensuring responsiveness and user-friendly experience.</li>
                         <li>Designed and optimized <strong>backend logic and integrations</strong>, working with <strong>REST API</strong> and <strong>WebSockets</strong>.</li>
-                        <li>Worked with <strong>MongoDB</strong> via .NET's built-in driver, optimizing database queries and backend logic for better performance.</li>
+                        <li>Worked with <strong>MongoDB</strong>, optimizing database queries and backend logic for better performance.</li>
                         <li>Reduced website loading time by ~30% by optimizing <strong>Web Vitals, caching mechanisms, and refining third-party integrations</strong>.</li>
                         <li>Developed and maintained backend <strong>unit tests</strong> using <strong>Moq</strong> and <strong>NSubstitute</strong>, ensuring high reliability of critical functions.</li>
                         <li>Performed API testing using <strong>Postman</strong>, with API documentation available through <strong>Swagger</strong>.</li>
                         <li>Actively participated in <strong>code reviews</strong>, contributing to better code quality and knowledge sharing within the team.</li>
-                        <li>Regularly collaborated with <strong>developers, testers, and analysts</strong>, participating in <strong>daily stand-ups and technical discussions</strong>to define optimal solutions.</li>
+                        <li>Regularly collaborated with <strong>developers, testers, and analysts</strong>, participating in <strong>daily stand-ups and technical discussions</strong> to define optimal solutions.</li>
                         <li>Frequently engaged in <strong>refactoring and implementing new technologies</strong> to improve <strong>developer experience (DX)</strong> and project maintainability.</li>
                     </cv-experience>
                     <cv-experience
@@ -106,14 +110,14 @@
                         company="Active-Electro LLC"
                         technologies="SolidWorks, AutoCAD, CNC Programming (cncKad, BodorPro)"
                     >
-                        <li>Development of 3D models and accompanying documentation for sheet metal structures in the SolidWorks program</li>
-                        <li>Programming for CNC machines (Durmazlar, Bodorlaser) in cncKad and BodorPro programs, optimizing tool paths and processing speeds</li>
-                        <li>Design and development of non-standard products and production tooling based on custom orders</li>
-                        <li>Optimization of material usage and enhancement of production efficiency</li>
-                        <li>Creation of equipment repair projects and execution control</li>
-                        <li>Development of an Excel-based tool for simplified calculation of production norms</li>
-                        <li>Installation, configuration, and maintenance of the local network infrastructure</li>
-                        <li>Setup and deployment of required software on all company computers</li>
+                        <li>Development of 3D models and accompanying documentation for sheet metal structures in the SolidWorks program.</li>
+                        <li>Programming for CNC machines (Durmazlar, Bodorlaser) in cncKad and BodorPro programs, optimizing tool paths and processing speeds.</li>
+                        <li>Design and development of non-standard products and production tooling based on custom orders.</li>
+                        <li>Optimization of material usage and enhancement of production efficiency.</li>
+                        <li>Creation of equipment repair projects and execution control.</li>
+                        <li>Development of an Excel-based tool for simplified calculation of production norms.</li>
+                        <li>Installation, configuration, and maintenance of the local network infrastructure.</li>
+                        <li>Setup and deployment of required software on all company computers.</li>
                     </cv-experience>
                     <cv-experience
                         date="06.2011 – 03.2014"
@@ -121,11 +125,11 @@
                         company="CJSC PromMetIzdeliy Factory"
                         technologies="SolidWorks, AutoCAD, CNC Programming (Euromac)"
                     >
-                        <li>Development of 3D models and accompanying documentation for sheet metal structures in the SolidWorks program</li>
-                        <li>Programming for the CNC machine (Euromac), optimizing cutting paths and processing speed</li>
-                        <li>Design and prototyping of non-standard products and production tooling</li>
-                        <li>Optimization of material usage and production efficiency</li>
-                        <li>Creation of equipment repair projects and execution control</li>
+                        <li>Development of 3D models and accompanying documentation for sheet metal structures in the SolidWorks program.</li>
+                        <li>Programming for the CNC machine (Euromac), optimizing cutting paths and processing speed.</li>
+                        <li>Design and prototyping of non-standard products and production tooling.</li>
+                        <li>Optimization of material usage and production efficiency.</li>
+                        <li>Creation of equipment repair projects and execution control.</li>
                     </cv-experience>
                     <cv-experience
                         date="07.2008 – 09.2008"
@@ -133,12 +137,12 @@
                         company="Krasnoslobodsk Radio Factory"
                         technologies="Soldering, PCB Assembly, Electronics, Auto Electrical Systems"
                     >
-                        <li>Layout and soldering of electronic power steering boards for Lada Priora cars</li>
-                        <li>Assembly of power window control modules for Lada Priora cars</li>
-                        <li>Testing and debugging of assembled units to ensure quality and functionality</li>
-                        <li>Identifying and fixing defects in soldering and assembly</li>
-                        <li>Following schematics and assembly instructions to ensure precision</li>
-                        <li>Collaborating with engineers to optimize PCB layouts for production efficiency</li>
+                        <li>Layout and soldering of electronic power steering boards for Lada Priora cars.</li>
+                        <li>Assembly of power window control modules for Lada Priora cars.</li>
+                        <li>Testing and debugging of assembled units to ensure quality and functionality.</li>
+                        <li>Identifying and fixing defects in soldering and assembly.</li>
+                        <li>Following schematics and assembly instructions to ensure precision.</li>
+                        <li>Collaborating with engineers to optimize PCB layouts for production efficiency.</li>
                     </cv-experience>
                 </cv-section>
                 <cv-section name="PERSONAL PROJECTS">
@@ -287,16 +291,22 @@
                             name="Fintech: JS development"
                             pdf="assets/certificates/Fintech-JS-development.pdf"
                             image="assets/certificates/Fintech-JS-development.webp"
+                            image-height="300"
+                            image-width="212"
                         ></cv-certificate>
                         <cv-certificate
                             name="Improving Productivity With Advanced LLM Prompting"
                             pdf="assets/certificates/LLM-Prompting.pdf"
                             image="assets/certificates/LLM-Prompting.webp"
+                            image-height="300"
+                            image-width="232"
                         ></cv-certificate>
                         <cv-certificate
-                            name="Practical course of Frontend development"
+                            name="Practical Course in Frontend Development"
                             pdf="assets/certificates/Practical-course-of-Frontend-development.pdf"
                             image="assets/certificates/Practical-course-of-Frontend-development.webp"
+                            image-height="300"
+                            image-width="214"
                         ></cv-certificate>
                     </div>
                 </cv-section>
