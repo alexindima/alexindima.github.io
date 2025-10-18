@@ -154,6 +154,34 @@ class CVCertificate extends HTMLElement {
     }
 }
 
+class CVSpeakingEvent extends HTMLElement {
+    connectedCallback() {
+        const name = this.getAttribute("name");
+        const date = this.getAttribute("date");
+        const link = this.getAttribute("link");
+        const description = this.getAttribute("description");
+
+        const content = this.innerHTML;
+        this.innerHTML = `
+            <div class="cv-speaking-event">
+                <div class="cv-speaking-event__info">
+                    <span class="cv-speaking-event__date">${date}</span>
+                    <span class="cv-speaking-event__title">${name}</span>
+                </div>
+                <div class="cv-speaking-event__body">
+                    ${description ? `<p class="cv-speaking-event__description">${description}</p>` : ""}
+                    ${content ? `<ul class="cv-speaking-event__details">${content}</ul>` : ""}
+                    ${link ? `
+                        <div class="cv-speaking-event__link">
+                            🎥 <a href="${link}" target="_blank">Watch on YouTube</a>
+                        </div>` : ""
+        }
+                </div>
+            </div>
+        `;
+    }
+}
+
 customElements.define('cv-section', CVSection);
 customElements.define("cv-contacts", CVContacts);
 customElements.define("cv-language", CVLanguage);
@@ -161,3 +189,4 @@ customElements.define('cv-experience', CVExperience);
 customElements.define('cv-personal-project', CVPersonalProject);
 customElements.define('cv-education', CVEducation);
 customElements.define("cv-certificate", CVCertificate);
+customElements.define("cv-speaking-event", CVSpeakingEvent);

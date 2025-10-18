@@ -61,8 +61,8 @@
                 <cv-section name="TECH STACK">
                     <ul class="tech-stack">
                         <li><strong>Frontend:</strong> Angular, TypeScript, JavaScript, RxJS, Angular Material, Bootstrap, Taiga UI, PWA, WebSockets</li>
-                        <li><strong>Backend:</strong> C#, .NET, SignalR, Rabbit MQ, NestJS, Node.js</li>
-                        <li><strong>Databases:</strong> MongoDB, Redis, PostgresSQL, Prisma ORM</li>
+                        <li><strong>Backend:</strong> C#, .NET, SignalR, Rabbit MQ</li>
+                        <li><strong>Databases:</strong> MongoDB, Redis</li>
                         <li><strong>Testing:</strong> Jest, Moq, NSubstitute, Selenium, Unittest, Postman, JMeter</li>
                         <li><strong>DevOps & CI/CD:</strong> GitHub Actions, GitLab CI, Docker, Heroku</li>
                         <li><strong>Other Tools:</strong> Swagger, Chart.js, Telegraf.js</li>
@@ -70,7 +70,24 @@
                 </cv-section>
                 <cv-section name="EXPERIENCE">
                     <cv-experience
-                        date="08.2023 - Present"
+                            date="06.2025 – Present"
+                            position="Team Lead / Full-Stack Developer"
+                            company="Codemasters International LLC"
+                            technologies="Angular, TypeScript, C#, .NET, MongoDB, REST API, WebSockets, CQRS, DDD, NodaTime, RxJS, NSubstitute"
+                    >
+                        <li>Lead developer on the <strong>TruCalendar</strong> project — a scheduling and event management system integrated with <strong>TruVisibility</strong> ecosystem (<strong>TruLandings, TruEcommerce, TruEmailMarketing, TruCRM</strong>).</li>
+                        <li>Guided architectural transformation of the project to a <strong>Clean/Onion architecture</strong> with elements of <strong>Hexagonal design</strong>, improving scalability, maintainability, and testability.</li>
+                        <li>Introduced <strong>Domain-Driven Design (DDD)</strong> principles across backend and frontend codebases — including <strong>strongly-typed IDs</strong>, <strong>Value Objects</strong>, and <strong>CQRS</strong> command/query separation.</li>
+                        <li>Led refactoring of the <strong>Angular frontend</strong>, resulting in significant <strong>performance improvements</strong> and a smoother <strong>developer experience (DX)</strong>.</li>
+                        <li>Established clear <strong>domain boundaries</strong> and improved communication between <strong>Application</strong> and <strong>Domain layers</strong>.</li>
+                        <li>Worked closely with the team on <strong>code reviews, mentoring, and introducing best practices</strong> in both .NET and Angular development.</li>
+                        <li>Enhanced <strong>backend reliability</strong> through modularization, test coverage expansion, and <strong>dependency inversion</strong> improvements.</li>
+                        <li>Integrated new features and optimized <strong>event scheduling, time zone handling (NodaTime)</strong>, and <strong>calendar recurrence logic</strong>.</li>
+                        <li>Coordinated with other product teams to ensure seamless integration of <strong>TruCalendar</strong> with <strong>TruVisibility platform</strong>.</li>
+                    </cv-experience>
+
+                    <cv-experience
+                        date="08.2023 - 06.2025"
                         position="Full-stack developer"
                         company="Codemasters International LLC"
                         technologies="Angular, TypeScript, JavaScript, C#, .NET, MongoDB, REST API, WebSockets, Moq, NSubstitute, Jira, Angular Material, Bootstrap"
@@ -309,6 +326,18 @@
                             image-width="214"
                         ></cv-certificate>
                     </div>
+                </cv-section>
+                <cv-section name="PUBLIC SPEAKING">
+                    <cv-speaking-event
+                            name="Event Loop в действии: Визуализация и разбор JavaScript-асинхронности в браузере"
+                            date="05.2025"
+                            link="https://www.youtube.com/watch?v=KqZR_7xjcSU"
+                            description="Conference talk explaining how JavaScript's Event Loop works in browsers, covering macrotasks, microtasks, rendering, and async behavior."
+                    >
+                        <li>Explained how JavaScript handles task scheduling, Web APIs, and rendering cycles.</li>
+                        <li>Demonstrated step-by-step visualization of the Event Loop with real-time animations.</li>
+                        <li>Discussed browser optimizations, requestAnimationFrame and requestIdleCallback.</li>
+                    </cv-speaking-event>
                 </cv-section>
             </main>
             <footer class="cv__footer">
