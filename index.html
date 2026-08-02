@@ -1,354 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="CV of Aleksin Dmitrii">
-        <title>CV Aleksin Dmitrii</title>
-        <link rel="icon" href="./assets/images/icons/favicon.webp" type="image/x-icon">
-        <link rel="stylesheet" href="assets/styles/style.css">
-        <script src="assets/scripts/components.js" defer></script>
-        <script src="assets/scripts/ripple.js" defer></script>
-    </head>
-    <body>
-        <div class="cv">
-            <header class="cv__header">
-                <div class="avatar">
-                    <a class="avatar__link" href="https://github.com/alexindima" target="_blank">
-                        <picture>
-                            <source media="(max-width: 1944px)" srcset="assets/images/avatar_500x500.webp" type="image/webp">
-                            <source media="(max-width: 768px)" srcset="assets/images/avatar_768x768.webp" type="image/jpeg">
-                            <img class="avatar__img" src="assets/images/avatar.webp" alt="Avatar">
-                        </picture>
-                    </a>
-                </div>
-                <div class="header-info">
-                    <div class="header-info__main contact-info">
-                        <h1 class="contact-info__name">DMITRII ALEKSIN</h1>
-                        <div class="contact-info__role">Full-stack developer</div>
-                        <div class="contact-info__additional">
-                            <div class="contact-info-group">
-                                <p class="contact-info-group__title">CONTACTS</p>
-                                <cv-contacts></cv-contacts>
-                            </div>
-                            <div class="languages">
-                                <p class="languages__title">LANGUAGES</p>
-                                <div class="languages__items">
-                                    <cv-language
-                                        name="Russian"
-                                        dots="6"
-                                        filled="6"
-                                        level="C2 - Native speaker"
-                                        short-level="C2"
-                                    ></cv-language>
-                                    <cv-language
-                                        name="English"
-                                        dots="6"
-                                        filled="4"
-                                        level="B2 - Upper-Intermediate"
-                                        short-level="B2"
-                                    ></cv-language>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="header-info__goal">
-                        🎯 Obtain an IT Specialist position where I can maximize my skills and development.
-                    </div>
-                </div>
-            </header>
-            <main class="cv__main ripple-effect">
-                <cv-section name="TECH STACK">
-                    <ul class="tech-stack">
-                        <li><strong>Frontend:</strong> Angular, TypeScript, JavaScript, RxJS, Angular Material, Bootstrap, Taiga UI, PWA, WebSockets</li>
-                        <li><strong>Backend:</strong> C#, .NET, SignalR, Rabbit MQ</li>
-                        <li><strong>Databases:</strong> MongoDB, Redis</li>
-                        <li><strong>Testing:</strong> Jest, Moq, NSubstitute, Selenium, Unittest, Postman, JMeter</li>
-                        <li><strong>DevOps & CI/CD:</strong> GitHub Actions, GitLab CI, Docker, Heroku</li>
-                        <li><strong>Other Tools:</strong> Swagger, Chart.js, Telegraf.js</li>
-                    </ul>
-                </cv-section>
-                <cv-section name="EXPERIENCE">
-                    <cv-experience
-                            date="06.2025 – Present"
-                            position="Team Lead / Full-Stack Developer"
-                            company="Codemasters International LLC"
-                            technologies="Angular, TypeScript, C#, .NET, MongoDB, REST API, WebSockets, CQRS, DDD, NodaTime, RxJS, NSubstitute"
-                    >
-                        <li>Lead developer on the <strong>TruCalendar</strong> project — a scheduling and event management system integrated with <strong>TruVisibility</strong> ecosystem (<strong>TruLandings, TruEcommerce, TruEmailMarketing, TruCRM</strong>).</li>
-                        <li>Guided architectural transformation of the project to a <strong>Clean/Onion architecture</strong> with elements of <strong>Hexagonal design</strong>, improving scalability, maintainability, and testability.</li>
-                        <li>Introduced <strong>Domain-Driven Design (DDD)</strong> principles across backend and frontend codebases — including <strong>strongly-typed IDs</strong>, <strong>Value Objects</strong>, and <strong>CQRS</strong> command/query separation.</li>
-                        <li>Led refactoring of the <strong>Angular frontend</strong>, resulting in significant <strong>performance improvements</strong> and a smoother <strong>developer experience (DX)</strong>.</li>
-                        <li>Established clear <strong>domain boundaries</strong> and improved communication between <strong>Application</strong> and <strong>Domain layers</strong>.</li>
-                        <li>Worked closely with the team on <strong>code reviews, mentoring, and introducing best practices</strong> in both .NET and Angular development.</li>
-                        <li>Enhanced <strong>backend reliability</strong> through modularization, test coverage expansion, and <strong>dependency inversion</strong> improvements.</li>
-                        <li>Integrated new features and optimized <strong>event scheduling, time zone handling (NodaTime)</strong>, and <strong>calendar recurrence logic</strong>.</li>
-                        <li>Coordinated with other product teams to ensure seamless integration of <strong>TruCalendar</strong> with <strong>TruVisibility platform</strong>.</li>
-                    </cv-experience>
-
-                    <cv-experience
-                        date="08.2023 - 06.2025"
-                        position="Full-stack developer"
-                        company="Codemasters International LLC"
-                        technologies="Angular, TypeScript, JavaScript, C#, .NET, MongoDB, REST API, WebSockets, Moq, NSubstitute, Jira, Angular Material, Bootstrap"
-                    >
-                        <li>Working on <strong>TruVisibility Sites</strong>, a website builder platform, since its early MVP stage, continuously adding new features and maintaining existing functionality.</li>
-                        <li>Developed and optimized core parts of the <strong>site editor, widget rendering engine</strong>, and scripting functionality using both <strong>Angular and pure TypeScript</strong>.</li>
-                        <li>Implemented UI components using <strong>Angular Material</strong> and <strong>Bootstrap</strong>, ensuring responsiveness and user-friendly experience.</li>
-                        <li>Designed and optimized <strong>backend logic and integrations</strong>, working with <strong>REST API</strong> and <strong>WebSockets</strong>.</li>
-                        <li>Worked with <strong>MongoDB</strong>, optimizing database queries and backend logic for better performance.</li>
-                        <li>Reduced website loading time by ~30% by optimizing <strong>Web Vitals, caching mechanisms, and refining third-party integrations</strong>.</li>
-                        <li>Developed and maintained backend <strong>unit tests</strong> using <strong>Moq</strong> and <strong>NSubstitute</strong>, ensuring high reliability of critical functions.</li>
-                        <li>Performed API testing using <strong>Postman</strong>, with API documentation available through <strong>Swagger</strong>.</li>
-                        <li>Actively participated in <strong>code reviews</strong>, contributing to better code quality and knowledge sharing within the team.</li>
-                        <li>Regularly collaborated with <strong>developers, testers, and analysts</strong>, participating in <strong>daily stand-ups and technical discussions</strong> to define optimal solutions.</li>
-                        <li>Frequently engaged in <strong>refactoring and implementing new technologies</strong> to improve <strong>developer experience (DX)</strong> and project maintainability.</li>
-                    </cv-experience>
-                    <cv-experience
-                        date="02.2022 – 08.2023"
-                        position="QA Engineer"
-                        company="Codemasters International LLC"
-                        technologies="Python, Selenium, Unittest, Jira, Qase, Postman, JMeter, Manual Testing, Automated Testing"
-                    >
-                        <li>Worked on the <strong>TruVisibility Sites</strong> project, a website builder allowing users to add, configure, and move widgets such as buttons, text, images, forms, and dividers.</li>
-                        <li>Conducted <strong>functional, UI, smoke, regression, and load testing</strong> to ensure platform stability and usability.</li>
-                        <li>Initially maintained test cases in <strong>Confluence</strong>, later migrated them to <strong>Qase</strong>.</li>
-                        <li>Created and managed bug reports in <strong>Jira</strong> and collaborated closely with developers and analysts to clarify requirements and expected behavior.</li>
-                        <li>Developed and maintained 200+ <strong>automated E2E and API tests</strong>, improving test coverage and regression testing efficiency using <strong>Python + Selenium + Unittest</strong>.</li>
-                        <li>Executed <strong>end-to-end (E2E) tests</strong> and API tests manually and integrated results into <strong>Qase</strong>.</li>
-                        <li>Extensively used <strong>Postman</strong> for API testing and verification of backend services.</li>
-                        <li>Performed <strong>load testing with JMeter</strong> to assess system performance and identify bottlenecks.</li>
-                        <li>Participated in <strong>daily stand-ups, refinement meetings, and code reviews of test automation scripts</strong>.</li>
-                        <li>Led the implementation of <strong>automated testing on the project</strong>, significantly improving test coverage and efficiency.</li>
-                    </cv-experience>
-                    <cv-experience
-                        date="03.2014 – 05.2022"
-                        position="Chief Design Engineer"
-                        company="Active-Electro LLC"
-                        technologies="SolidWorks, AutoCAD, CNC Programming (cncKad, BodorPro)"
-                    >
-                        <li>Development of 3D models and accompanying documentation for sheet metal structures in the SolidWorks program.</li>
-                        <li>Programming for CNC machines (Durmazlar, Bodorlaser) in cncKad and BodorPro programs, optimizing tool paths and processing speeds.</li>
-                        <li>Design and development of non-standard products and production tooling based on custom orders.</li>
-                        <li>Optimization of material usage and enhancement of production efficiency.</li>
-                        <li>Creation of equipment repair projects and execution control.</li>
-                        <li>Development of an Excel-based tool for simplified calculation of production norms.</li>
-                        <li>Installation, configuration, and maintenance of the local network infrastructure.</li>
-                        <li>Setup and deployment of required software on all company computers.</li>
-                    </cv-experience>
-                    <cv-experience
-                        date="06.2011 – 03.2014"
-                        position="Design Engineer"
-                        company="CJSC PromMetIzdeliy Factory"
-                        technologies="SolidWorks, AutoCAD, CNC Programming (Euromac)"
-                    >
-                        <li>Development of 3D models and accompanying documentation for sheet metal structures in the SolidWorks program.</li>
-                        <li>Programming for the CNC machine (Euromac), optimizing cutting paths and processing speed.</li>
-                        <li>Design and prototyping of non-standard products and production tooling.</li>
-                        <li>Optimization of material usage and production efficiency.</li>
-                        <li>Creation of equipment repair projects and execution control.</li>
-                    </cv-experience>
-                    <cv-experience
-                        date="07.2008 – 09.2008"
-                        position="PCB Assembler"
-                        company="Krasnoslobodsk Radio Factory"
-                        technologies="Soldering, PCB Assembly, Electronics, Auto Electrical Systems"
-                    >
-                        <li>Layout and soldering of electronic power steering boards for Lada Priora cars.</li>
-                        <li>Assembly of power window control modules for Lada Priora cars.</li>
-                        <li>Testing and debugging of assembled units to ensure quality and functionality.</li>
-                        <li>Identifying and fixing defects in soldering and assembly.</li>
-                        <li>Following schematics and assembly instructions to ensure precision.</li>
-                        <li>Collaborating with engineers to optimize PCB layouts for production efficiency.</li>
-                    </cv-experience>
-                </cv-section>
-                <cv-section name="PERSONAL PROJECTS">
-                    <cv-personal-project
-                        name="Food Diary (Personal Full-Stack Project)"
-                        date="2024 - Present"
-                        technologies="Angular, NestJS, PostgreSQL, Prisma, RxJS, Taiga UI, GitHub Actions, Docker, Chart.js, Swagger"
-                    >
-                        <li>Developed a <strong>full-stack nutrition tracking application</strong> for monitoring food consumption and analyzing dietary habits.</li>
-                        <li>Users can <strong>add products, create consumption logs, track calorie and nutrient intake</strong>, and view statistics for <strong>day, week, month, year, or custom periods</strong>.</li>
-                        <li>Implemented <strong>Standalone Components, Signals, and RxJS</strong> for state management.</li>
-                        <li>Utilized <strong>Taiga UI</strong> for a responsive and modern interface, with full <strong>mobile adaptation and PWA support</strong>.</li>
-                        <li>Backend built with <strong>NestJS</strong>, using <strong>Prisma ORM</strong> and <strong>PostgreSQL</strong> for data management.</li>
-                        <li>Implemented secure <strong>JWT authentication</strong> for user sessions.</li>
-                        <li>Integrated <strong>Chart.js</strong> for detailed graphical representation of nutritional statistics.</li>
-                        <li>API documentation provided via <strong>Swagger</strong>.</li>
-                        <li>Deployed via <strong>GitHub Actions</strong> to a personal server, with <strong>Docker-based containerization</strong>.</li>
-                        <li>Open-source project available on <a href="https://github.com/alexindima/food-diary" target="_blank">GitHub</a>.</li>
-                    </cv-personal-project>
-                    <cv-personal-project
-                        name="Money Limiter (Telegram Bot)"
-                        date="2025"
-                        technologies="TypeScript, Node.js, Telegraf, SQLite, GitHub Actions, Webhooks"
-                    >
-                        <li>Developed a <strong>Telegram bot for budget management</strong>, allowing users to set and track spending limits.</li>
-                        <li>Implemented features for <strong>tracking expenses, generating reports, and setting financial goals</strong>.</li>
-                        <li>Utilizes <strong>SQLite</strong> for lightweight and persistent data storage.</li>
-                        <li>Integrated with <strong>Telegram API</strong> using <strong>Telegraf.js</strong> for efficient bot interaction.</li>
-                        <li>Supports <strong>webhooks and polling</strong> for real-time updates.</li>
-                        <li>Automated deployment via <strong>GitHub Actions</strong>, ensuring smooth continuous delivery.</li>
-                        <li>Open-source project available on <a href="https://github.com/alexindima/telegram-bot-money-limiter" target="_blank">GitHub</a>.</li>
-                    </cv-personal-project>
-                    <cv-personal-project
-                        name="CheckRangeSupport (Utility Project)"
-                        date="2024"
-                        technologies="C#, .NET, HTTP, Web APIs"
-                    >
-                        <li>Developed a <strong>utility to check HTTP Range request support</strong> in web services.</li>
-                        <li>Uses <strong>C# and .NET</strong> to send requests and analyze server responses.</li>
-                        <li>Helps developers <strong>optimize streaming and file download mechanisms</strong> by detecting support for <strong>partial content (HTTP 206 response)</strong>.</li>
-                        <li>Designed for <strong>debugging and performance testing</strong> in content delivery applications.</li>
-                        <li>Open-source project available on <a href="https://github.com/alexindima/CheckRangeSupport" target="_blank">GitHub</a>.</li>
-                    </cv-personal-project>
-                </cv-section>
-                <cv-section name="EDUCATION">
-                    <cv-education
-                        date="09.2024 – 12.2024"
-                        degree="Fintech: JS development"
-                        company="T-Bank"
-                        tags="Git, JavaScript, TypeScript, Angular, NodeJS, NestJS, CI/CD, PostgreSQL, Prisma, GitLab CI, Heroku, Swagger, Signals, Standalone Components, Taiga UI"
-                    >
-                        <li>Focused primarily on <strong>Angular development</strong>, including <strong>Standalone Components and Signals</strong>.</li>
-                        <li>Worked with <strong>Taiga UI</strong> for UI components.</li>
-                        <li>Implemented state management using <strong>Signals</strong>.</li>
-                        <li>Developed a full-stack project: <strong>Nutrition Diary</strong>, using <strong>Angular for frontend and NestJS for backend</strong>.</li>
-                        <li>Used <strong>Prisma ORM</strong> to interact with a <strong>PostgreSQL database</strong>, implementing transactions and seeding.</li>
-                        <li>Implemented <strong>guards</strong> in NestJS to restrict access to authenticated users.</li>
-                        <li>Configured <strong>GitLab CI/CD</strong> pipelines.</li>
-                        <li>Deployed the backend on <strong>Heroku</strong>.</li>
-                        <li>Developed API documentation using <strong>Swagger</strong>.</li>
-                        <li>Created features such as <strong>adding products, tracking consumption, and viewing consumption statistics over various time periods</strong>.</li>
-                    </cv-education>
-                    <cv-education
-                        date="10.2022 – 12.2022"
-                        degree="Frontend Developer"
-                        company="Codemasters International LLC"
-                        tags="JavaScript, TypeScript, Angular, React, RxJS, REST API, JWT, Cookies, Angular Material"
-                    >
-                        <li>Studied <strong>SPA architecture, REST API integration, and state management</strong>.</li>
-                        <li>Worked with <strong>modular unit testing</strong> to ensure application reliability.</li>
-                        <li>Developed a <strong>news feed application in React</strong>, using <strong>useState, useEffect, useContext</strong> for state management.</li>
-                        <li>Implemented <strong>React Router</strong> for navigation and handled data fetching via <strong>fetch API</strong>.</li>
-                        <li>Designed and implemented an <strong>admin panel in Angular</strong> for managing news and users.</li>
-                        <li>Used <strong>Angular Material</strong> for UI components and <strong>RxJS Observables</strong> for reactive data handling.</li>
-                        <li>Integrated <strong>HTTP Client, interceptors, and guards</strong> for API communication.</li>
-                        <li>Implemented <strong>user role-based authentication</strong>, restricting admin panel access to authorized users.</li>
-                        <li>Initially worked with <strong>json-server</strong> for backend emulation, later migrated to <strong>PHP + Laravel backend</strong>.</li>
-                        <li>Managed authentication using <strong>JWT</strong>, later refactored to <strong>Cookies-based authentication</strong>.</li>
-                        <li>Worked independently on the project, handling both <strong>React and Angular</strong> implementations.</li>
-                    </cv-education>
-                    <cv-education
-                        date="09.2021 – 06.2022"
-                        degree="QA engineer"
-                        company="Codemasters International LLC"
-                        tags="Jira, Confluence, Manual Testing, Automated Testing, Python, Selenium, Unittest, Postman, API Testing, BDD, Git"
-                    >
-                        <li>Studied <strong>smoke, functional, regression, load, UI, API, and mobile testing</strong> methodologies.</li>
-                        <li>Learned and applied <strong>STLC and SDLC processes</strong>.</li>
-                        <li>Worked with <strong>Jira</strong> for bug tracking and <strong>Confluence</strong> for documentation management.</li>
-                        <li>Developed automated <strong>end-to-end (E2E) and API tests</strong> using <strong>Python, Selenium, Unittest</strong>.</li>
-                        <li>Utilized <strong>Postman</strong> for API testing and validation.</li>
-                        <li>Covered <strong>core application functionalities</strong> with automated test cases.</li>
-                        <li>Worked on real-world simulated projects, including a <strong>TODO app and a calculator</strong>, integrating test automation.</li>
-                        <li>Implemented <strong>BDD-style automated tests</strong>.</li>
-                        <li>Collaborated with a team of students, simulating real-world IT workflows and task distribution.</li>
-                        <li>Worked with <strong>Git</strong> for version control.</li>
-                    </cv-education>
-                    <cv-education
-                        date="09.2016 - 06.2017"
-                        degree="Welder"
-                        company="Krasnoslobodsky vocational school"
-                        tags="Welding of Metals, Electric Arc Welding, MIG/MAG Welding, Metal Structures, Technical Drawings"
-                    >
-                        <li>Studied <strong>electric arc welding (MMA) and MIG/MAG welding techniques</strong>.</li>
-                        <li>Worked primarily with <strong>steel materials</strong>, following industrial standards.</li>
-                        <li>Developed skills in reading and interpreting <strong>technical drawings and welding documentation</strong>.</li>
-                        <li>Graduation project: <strong>Fabrication of a welded metal water tank structure</strong>, including all technical documentation.</li>
-                        <li>Gained hands-on experience with <strong>professional welding equipment</strong>.</li>
-                        <li>Received a <strong>diploma in professional welding</strong> upon graduation.</li>
-                    </cv-education>
-                    <cv-education
-                        date="09.2007 - 06.2013"
-                        degree="Radio Engineer"
-                        company="Mordovian State University"
-                        tags="Radio Engineering, Radio Waves, Digital Circuitry, Analog Circuitry, Signal Processing, Microcontrollers, KiCad, Matlab, Proteus, Multisim"
-                    >
-                        <li>Studied <strong>analog and digital circuit design</strong>, <strong>signal processing</strong>, and <strong>radio-electronic system development</strong>.</li>
-                        <li>Developed and tested <strong>radio transmitters and receivers</strong> in laboratory courses.</li>
-                        <li>Worked with <strong>oscilloscopes, signal generators, frequency meters</strong>, and other measurement equipment.</li>
-                        <li>Learned programming and application of <strong>PIC microcontrollers</strong>.</li>
-                        <li>Used <strong>Matlab, KiCad, Proteus, Multisim</strong> for circuit simulation and analysis.</li>
-                        <li>Diploma project: Designed and built a <strong>test system for measuring thermal hysteresis of IGBT transistors</strong> to evaluate transistor quality.</li>
-                        <li>Implemented a working prototype based on an <strong>AVR microcontroller</strong>.</li>
-                    </cv-education>
-                </cv-section>
-                <cv-section name="INTERESTS">
-                    <div class="interests">
-                        <span class="interests__tag">Programming</span>
-                        <span class="interests__tag">Artificial Intelligence</span>
-                        <span class="interests__tag">Cats</span>
-                        <span class="interests__tag">Reading</span>
-                        <span class="interests__tag">Radio Technics</span>
-                        <span class="interests__tag">Arduino</span>
-                        <span class="interests__tag">Hardware Development</span>
-                        <span class="interests__tag">Digital Electronics</span>
-                        <span class="interests__tag">Travel</span>
-                        <span class="interests__tag">Education</span>
-                        <span class="interests__tag">Hiking & Outdoor Adventures </span>
-                        <span class="interests__tag">Souls Like Games</span>
-                        <span class="interests__tag">Music</span>
-                    </div>
-                </cv-section>
-                <cv-section name="CERTIFICATIONS">
-                    <div class="certificates">
-                        <cv-certificate
-                            name="Fintech: JS development"
-                            pdf="assets/certificates/Fintech-JS-development.pdf"
-                            image="assets/certificates/Fintech-JS-development.webp"
-                            image-height="300"
-                            image-width="212"
-                        ></cv-certificate>
-                        <cv-certificate
-                            name="Improving Productivity With Advanced LLM Prompting"
-                            pdf="assets/certificates/LLM-Prompting.pdf"
-                            image="assets/certificates/LLM-Prompting.webp"
-                            image-height="300"
-                            image-width="232"
-                        ></cv-certificate>
-                        <cv-certificate
-                            name="Practical Course in Frontend Development"
-                            pdf="assets/certificates/Practical-course-of-Frontend-development.pdf"
-                            image="assets/certificates/Practical-course-of-Frontend-development.webp"
-                            image-height="300"
-                            image-width="214"
-                        ></cv-certificate>
-                    </div>
-                </cv-section>
-                <cv-section name="PUBLIC SPEAKING">
-                    <cv-speaking-event
-                            name="Event Loop в действии: Визуализация и разбор JavaScript-асинхронности в браузере"
-                            date="05.2025"
-                            link="https://www.youtube.com/watch?v=KqZR_7xjcSU"
-                            description="Conference talk explaining how JavaScript's Event Loop works in browsers, covering macrotasks, microtasks, rendering, and async behavior."
-                    >
-                        <li>Explained how JavaScript handles task scheduling, Web APIs, and rendering cycles.</li>
-                        <li>Demonstrated step-by-step visualization of the Event Loop with real-time animations.</li>
-                        <li>Discussed browser optimizations, requestAnimationFrame and requestIdleCallback.</li>
-                    </cv-speaking-event>
-                </cv-section>
-            </main>
-            <footer class="cv__footer">
-                <div class="footer__contacts">
-                    <cv-contacts></cv-contacts>
-                </div>
-                <div class="copyright">
-                    <p>🚀 "Code. Learn. Improve. Never stop growing."</p>
-                    <p>© 2025 Dmitrii Aleksin. All Rights Reserved.</p>
-                </div>
-            </footer>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dmitrii Aleksin — Team Lead and Full-Stack .NET & Angular Engineer experienced in architecture, product development, testing, and technical leadership.">
+    <meta name="theme-color" content="#ffffff">
+    <title>Dmitrii Aleksin — Team Lead · Full-Stack .NET & Angular Engineer</title>
+    <link rel="icon" href="assets/images/icons/favicon.webp" type="image/webp">
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+<div class="resume">
+    <header class="hero">
+        <a class="portrait" href="https://github.com/alexindima" target="_blank" rel="noreferrer" aria-label="Open Dmitrii Aleksin's GitHub profile">
+            <img src="assets/images/avatar_500x500.webp" alt="Dmitrii Aleksin" width="500" height="500">
+        </a>
+        <div class="hero__identity">
+            <h1>Dmitrii Aleksin</h1>
+            <p class="hero__role">Team Lead <span aria-hidden="true">·</span> Full-Stack .NET & Angular Engineer</p>
         </div>
-    </body>
+        <button class="print-button" type="button" onclick="window.print()" aria-label="Print or save this résumé as PDF">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v8H6z"/></svg>
+            Print / Save as PDF
+        </button>
+    </header>
+
+    <div class="resume__layout">
+        <aside class="sidebar" aria-label="Contact details and core expertise">
+            <section class="sidebar__section contact" aria-labelledby="contact-title">
+                <h2 id="contact-title">Contact</h2>
+                <ul class="plain-list contact__list">
+                    <li><span>Email</span><a href="mailto:alexindima@gmail.com">alexindima@gmail.com</a></li>
+                    <li><span>Telegram</span><a href="https://t.me/Avenging_Archangel" target="_blank" rel="noreferrer">@Avenging_Archangel</a></li>
+                    <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/dmitrii-aleksin/" target="_blank" rel="noreferrer">dmitrii-aleksin</a></li>
+                    <li><span>GitHub</span><a href="https://github.com/alexindima" target="_blank" rel="noreferrer">github.com/alexindima</a></li>
+                </ul>
+            </section>
+
+            <section class="sidebar__section" aria-labelledby="focus-title">
+                <h2 id="focus-title">Core expertise</h2>
+                <ul class="plain-list compact-list">
+                    <li>Technical leadership</li>
+                    <li>System & API design</li>
+                    <li>Modular architecture</li>
+                    <li>Distributed workflows</li>
+                    <li>Frontend architecture</li>
+                    <li>Production reliability</li>
+                    <li>Testing strategy</li>
+                </ul>
+            </section>
+
+            <section class="sidebar__section" aria-labelledby="languages-title">
+                <h2 id="languages-title">Languages</h2>
+                <dl class="language-list">
+                    <div><dt>Russian</dt><dd>Native</dd></div>
+                    <div><dt>English</dt><dd>B2 · Upper-Intermediate</dd></div>
+                </dl>
+            </section>
+
+            <section class="sidebar__section sidebar__section--screen" aria-labelledby="download-title">
+                <h2 id="download-title">Résumé</h2>
+                <button class="text-button" type="button" onclick="window.print()">Print / Save as PDF →</button>
+            </section>
+        </aside>
+
+        <main class="content">
+            <section class="section summary" aria-labelledby="summary-title">
+                <h2 id="summary-title">Professional summary</h2>
+                <p>Full-stack engineer and Team Lead with 4+ years across software quality and product engineering. I build and evolve SaaS products with <strong>.NET and Angular</strong>, from domain and API design to frontend architecture, integrations, testing, delivery, and production support. Particularly strong in turning tightly coupled workflows into explicit, reliable boundaries while keeping solutions understandable for the team.</p>
+            </section>
+
+            <section class="section impact" aria-labelledby="impact-title">
+                <h2 id="impact-title">Selected impact</h2>
+                <ul class="impact-list">
+                    <li><strong>Technical leadership:</strong> lead architecture and full-stack delivery for TruCalendar within a cross-functional team of <strong>3–4 developers, 1–3 QA engineers, and a business analyst</strong>, supporting delivery through design decisions, reviews, and mentoring.</li>
+                    <li><strong>Performance:</strong> reduced website loading time by approximately <strong>30%</strong> through Web Vitals, caching, and third-party integration improvements.</li>
+                    <li><strong>Quality engineering:</strong> introduced and maintained <strong>200+ automated E2E and API tests</strong>, building on a QA background to make testability part of design rather than a final-stage activity.</li>
+                </ul>
+            </section>
+
+            <section class="section" aria-labelledby="experience-title">
+                <h2 id="experience-title">Experience</h2>
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <div class="timeline-item__meta"><time>Jun 2025 — Present</time></div>
+                        <div class="timeline-item__body">
+                            <h3>Team Lead / Full-Stack Developer</h3>
+                            <p class="company">Codemasters International LLC · TruCalendar</p>
+                            <ul>
+                                <li>Lead full-stack development of a scheduling and event-management product integrated with TruLandings, TruEcommerce, TruEmailMarketing, and TruCRM.</li>
+                                <li>Drive the transition toward explicit domain boundaries and ports-and-adapters architecture, reducing coupling between scheduling workflows and external products.</li>
+                                <li>Apply DDD and CQRS where they clarify complex scheduling behavior, including strongly typed identifiers, value objects, recurrence, and time-zone handling with NodaTime.</li>
+                                <li>Own technical decisions across the .NET backend and Angular frontend; conduct code reviews, mentor developers, and coordinate delivery and integrations across product teams.</li>
+                            </ul>
+                            <p class="stack"><strong>Environment:</strong> C#, .NET, Angular, TypeScript, MongoDB, RxJS, NodaTime, REST, WebSockets, CQRS, DDD</p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-item__meta"><time>Aug 2023 — Jun 2025</time></div>
+                        <div class="timeline-item__body">
+                            <h3>Full-Stack Developer</h3>
+                            <p class="company">Codemasters International LLC · TruVisibility Sites</p>
+                            <ul>
+                                <li>Developed the product from its early MVP stage, contributing across the Angular site editor, widget rendering engine, scripting capabilities, backend services, and integrations.</li>
+                                <li>Improved website loading time by approximately 30% by optimizing Web Vitals, caching behavior, and third-party integrations.</li>
+                                <li>Designed and optimized REST and WebSocket workflows and MongoDB-backed application logic; expanded backend unit-test coverage for critical behavior.</li>
+                                <li>Collaborated with developers, QA engineers, and analysts on requirements, implementation trade-offs, reviews, and maintainability improvements.</li>
+                            </ul>
+                            <p class="stack"><strong>Environment:</strong> Angular, TypeScript, C#, .NET, MongoDB, REST, WebSockets, RxJS, Angular Material, Bootstrap</p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-item__meta"><time>Feb 2022 — Aug 2023</time></div>
+                        <div class="timeline-item__body">
+                            <h3>QA Engineer</h3>
+                            <p class="company">Codemasters International LLC · TruVisibility Sites</p>
+                            <ul>
+                                <li>Led the introduction of test automation and developed 200+ E2E and API tests using Python, Selenium, and Unittest.</li>
+                                <li>Performed functional, regression, UI, API, and load testing; investigated failures and worked directly with developers and analysts on root causes.</li>
+                                <li>Managed test cases and defect reporting in Qase and Jira and used Postman and JMeter to validate backend behavior and performance.</li>
+                            </ul>
+                            <p class="stack"><strong>Environment:</strong> Python, Selenium, Unittest, Postman, JMeter, Jira, Qase</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section project" aria-labelledby="project-title">
+                <div class="section-heading-row">
+                    <h2 id="project-title">Flagship project</h2>
+                    <a href="https://github.com/alexindima/food-diary" target="_blank" rel="noreferrer">View source →</a>
+                </div>
+                <h3>FoodDiary <span>· Sole Developer & System Designer</span></h3>
+                <p class="project__intro">A production-oriented nutrition and dietitian platform that demonstrates end-to-end product ownership beyond a typical portfolio CRUD application.</p>
+                <ul>
+                    <li>Designed and built a modular .NET and Angular application covering nutrition tracking, dietitian workflows, billing, notifications, real-time updates, and AI-assisted food recognition.</li>
+                    <li>Implemented reliable asynchronous processing with RabbitMQ, transactional outbox patterns, retries, dead-letter handling, and auditable message replay.</li>
+                    <li>Protected duplicate-sensitive operations with Redis-backed idempotency and designed explicit read/write boundaries for growing product modules.</li>
+                    <li>Created automated architectural, contract, unit, integration, and performance guardrails and operate the application with Docker-based delivery and production monitoring.</li>
+                </ul>
+                <p class="stack"><strong>Stack:</strong> C#, .NET, Angular, TypeScript, PostgreSQL, Redis, RabbitMQ, SignalR, Docker, GitHub Actions</p>
+            </section>
+
+            <section class="section skills" aria-labelledby="skills-title">
+                <h2 id="skills-title">Technical skills</h2>
+                <dl class="skills-list">
+                    <div><dt>Backend</dt><dd>C#, .NET, ASP.NET Core, Entity Framework Core, REST APIs, SignalR, CQRS, DDD</dd></div>
+                    <div><dt>Frontend</dt><dd>Angular, TypeScript, JavaScript, RxJS, Signals, Angular Material, Taiga UI, PWA, WebSockets</dd></div>
+                    <div><dt>Data & messaging</dt><dd>PostgreSQL, MongoDB, Redis, RabbitMQ</dd></div>
+                    <div><dt>Quality</dt><dd>Unit, integration, contract, architecture and E2E testing; NSubstitute, Moq, Selenium, Postman, JMeter</dd></div>
+                    <div><dt>Delivery & operations</dt><dd>Docker, GitHub Actions, GitLab CI/CD, Swagger / OpenAPI, production monitoring</dd></div>
+                </dl>
+            </section>
+
+            <section class="section compact-section" aria-labelledby="background-title">
+                <h2 id="background-title">Earlier career & education</h2>
+                <div class="compact-row">
+                    <time>2011 — 2022</time>
+                    <p><strong>Design Engineer → Chief Design Engineer</strong><br>Designed industrial products and tooling, programmed CNC equipment, optimized production, and coordinated engineering execution. This background shaped a systems-oriented and pragmatic approach to software.</p>
+                </div>
+                <div class="compact-row">
+                    <time>2007 — 2013</time>
+                    <p><strong>Radio Engineer</strong><br>Mordovian State University</p>
+                </div>
+                <div class="compact-row">
+                    <time>2022 — 2024</time>
+                    <p><strong>Professional training</strong><br>Frontend Development · Codemasters International; Fintech: JS Development · T-Bank</p>
+                </div>
+            </section>
+
+            <section class="section compact-section" aria-labelledby="speaking-title">
+                <h2 id="speaking-title">Public speaking</h2>
+                <div class="compact-row">
+                    <time>May 2025</time>
+                    <p><strong>“Event Loop in Action: Visualizing JavaScript Asynchrony in the Browser”</strong><br><a href="https://www.youtube.com/watch?v=KqZR_7xjcSU" target="_blank" rel="noreferrer">Watch the conference talk on YouTube →</a></p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <span>© 2026 Dmitrii Aleksin</span>
+        <span>Last updated August 2026</span>
+    </footer>
+</div>
+</body>
 </html>
