@@ -1,53 +1,46 @@
-# CV of Dmitrii Aleksin
+# Dmitrii Aleksin — Résumé
 
-This is a responsive and interactive resume webpage for Dmitrii Aleksin. It provides a structured and professional presentation of experience, skills, and projects with interactive features.
+A bilingual, responsive résumé website for Dmitrii Aleksin, Team Lead and Full-Stack .NET & Angular Engineer.
+
+## Live versions
+
+- [English résumé](https://alexindima.github.io/)
+- [Русская версия](https://alexindima.github.io/ru/)
 
 ## Features
 
-- **Structured CV Layout**: Organized sections including experience, projects, education, and certifications.
-- **Custom Web Components**: Uses modern Web Components for modular and reusable code.
-- **Material Wave Effect**: Implements a ripple effect for interactive elements.
-- **Responsive Design**: The layout adapts to different screen sizes for optimal viewing on desktop and mobile.
+- English and Russian versions with an accessible language switcher
+- Responsive desktop and mobile layouts
+- Print-friendly A4 styles for saving either version as PDF
+- Semantic, ATS-friendly HTML
+- SEO language metadata with `hreflang`
+- No JavaScript dependencies; only the native browser print action is used
 
-## Technologies Used
+## Project structure
 
-- HTML
-- CSS
-- JavaScript (Web Components and ripple effect)
+```text
+index.html                     English résumé
+ru/index.html                  Russian résumé
+assets/styles/style.css        Shared responsive and print styles
+assets/images/                 Profile photo and favicon
+```
 
-## Installation & Setup
+## Local development
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/alexindima/alexindima.github.io.git
-    ```
-2. Navigate to the project directory:
-    ```bash
-    cd alexindima.github.io
-    ```
-3. Open `index.html` in your web browser or use a local server:
-    ```bash
-    npx http-server
-    ```
+Run any static HTTP server from the repository root, for example:
 
-## Usage
+```bash
+python -m http.server 4173
+```
 
-- **View CV**: Open `index.html` in a browser to view the CV.
-- **Contact Information**: Easily access contact details via the provided links.
+Then open:
 
-## Project Structure
-
-- `index.html` - Main HTML structure.
-- `assets/styles/` - CSS styles for UI design and responsiveness.
-- `assets/scripts/` - JavaScript files for custom components and interactive features.
-- `assets/images/` - Profile images and icons.
-- `assets/certificates/` - Digital certificates for achievements.
+- `http://localhost:4173/`
+- `http://localhost:4173/ru/`
 
 ## Contact
 
-For any inquiries, please contact me at:
-- **Email**: [alexindima@gmail.com](mailto:alexindima@gmail.com)
-- **Telegram**: [@Avenging_Archangel](https://t.me/@Avenging_Archangel)
-- **LinkedIn**: [in/dmitrii-aleksin](https://www.linkedin.com/in/dmitrii-aleksin/)
-- **GitHub**: [github.com/alexindima](https://github.com/alexindima)
-
+- [Email](mailto:alexindima@gmail.com)
+- [Telegram](https://t.me/Avenging_Archangel)
+- [LinkedIn](https://www.linkedin.com/in/dmitrii-aleksin/)
+- [GitHub](https://github.com/alexindima)

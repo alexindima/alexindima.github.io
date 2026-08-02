@@ -76,6 +76,26 @@ strong { font-weight: 650; }
 
 .hero__role span { margin: 0 .32em; color: #8995b4; }
 
+.hero__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.language-switch {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--muted);
+    font-size: .75rem;
+    font-weight: 650;
+    letter-spacing: .05em;
+}
+
+.language-switch a { text-decoration: none; }
+.language-switch [aria-current="page"] { color: var(--ink); }
+
 .print-button, .text-button {
     color: var(--accent);
     border: 0;
@@ -154,6 +174,7 @@ strong { font-weight: 650; }
 .timeline-item { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 0 22px; position: relative; padding: 4px 0 27px; }
 .timeline-item:last-child { padding-bottom: 0; }
 .timeline-item__meta { position: relative; padding: 2px 0 0 20px; color: var(--muted); font-size: .78rem; white-space: nowrap; }
+html[lang="ru"] .timeline-item__meta { padding-right: 8px; line-height: 1.4; white-space: normal; }
 .timeline-item__meta::before { content: ''; position: absolute; left: 0; top: 9px; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
 .timeline-item__meta::after { content: ''; position: absolute; left: 3.5px; top: 19px; bottom: -19px; width: 1px; background: var(--rule); }
 .timeline-item:last-child .timeline-item__meta::after { display: none; }
@@ -197,7 +218,8 @@ strong { font-weight: 650; }
     .portrait { width: 74px; border-radius: 13px; }
     .hero__identity { align-self: center; }
     .hero h1 { font-size: 2.65rem; }
-    .print-button { grid-column: 1 / -1; margin-top: 0; }
+    .hero__actions { grid-column: 1 / -1; flex-direction: row; align-items: center; justify-content: space-between; width: 100%; }
+    .print-button { margin-top: 0; }
     .resume__layout { display: flex; flex-direction: column; gap: 0; }
     .content { order: 1; padding-top: 28px; }
     .sidebar { order: 2; display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; padding: 25px 0 0; border-top: 1px solid var(--rule); border-right: 0; }
@@ -232,7 +254,7 @@ strong { font-weight: 650; }
     .portrait { width: 25mm; border-radius: 4mm; }
     .hero h1 { font-size: 31pt; }
     .hero__role { margin-top: 2mm; font-size: 12.5pt; }
-    .print-button, .sidebar__section--screen { display: none; }
+    .print-button, .language-switch, .sidebar__section--screen { display: none; }
     .resume__layout { grid-template-columns: 36mm minmax(0, 1fr); gap: 6mm; }
     .sidebar { padding: 6mm 4mm 0 0; }
     .sidebar__section { padding-bottom: 5mm; margin-bottom: 5mm; }
